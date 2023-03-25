@@ -1,4 +1,4 @@
 x = "hello there."
-if x.find(".") == True:
+if x.find(".") != -1:
     print("true")
 print("done")
