@@ -16,6 +16,7 @@ def main():
 
         platin += " " + str(englist[i]).replace(prefix, "", 1) + prefix.lower() + "ay" + suffix
 
+    platin = platin[0:1].upper()
     return(platin.capitalize())
 
 
