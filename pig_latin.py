@@ -19,4 +19,4 @@ def main():
     return(platin)
 
 
-print(main().capitalize())
+print(f"Pig Latin: {main()}")
