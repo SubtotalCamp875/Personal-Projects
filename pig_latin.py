@@ -1,11 +1,11 @@
 def main():
 
     english = input("Enter a sentence in English: ")
-    englist, platin, punctuation = english.split(" "), "", [".", ",", "!", "?", ";", ":", '"', "'", "(", ")", "[", "]"]
+    englist, platin, punctuation = english.split(" "), "", [".", ",", "!", "?", ";", ":", '"', "'", ")", "]"]
     for i in range(len(englist)):
 
         prefix, suffix = "", ""
-        if englist[i][0].lower() not in ["a", "e", "i", "o", "u"]:
+        if englist[i][0].lower() not in ["a", "e", "i", "o", "u", '"', "(", "'", "["]:
             prefix = englist[i][0]
 
         for j in englist[i]:
