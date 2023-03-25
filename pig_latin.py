@@ -5,9 +5,11 @@ def main():
     for i in range(len(englist)):
 
         prefix, suffix = "", ""
-        if englist[i][0].lower() not in ["a", "e", "i", "o", "u", '"', "(", "'", "["]:
+        if englist[i][0].lower() not in ["a", "e", "i", "o", "u"]:
             prefix = englist[i][0]
-
+            if englist[i][1].lower() in ['"', "(", "'", "["]:
+                prefix = englist[i][1]
+                
         for j in englist[i]:
             if j in punctuation:
                 suffix = j
