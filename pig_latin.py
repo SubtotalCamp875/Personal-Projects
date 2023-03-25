@@ -19,4 +19,4 @@ def main():
     return(platin)
 
 while True:
-    print(f"\nPig Latin: {main()}", end="\n")
+    print(main(), end="\n")
