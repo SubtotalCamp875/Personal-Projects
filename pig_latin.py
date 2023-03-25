@@ -6,7 +6,8 @@ def main():
         if englist[i][0].lower().strip not in ["a", "e", "i", "o", "u"]:
             prefix = englist[i][0]
         englist_index = str(englist[i]).replace(prefix, "", 1) + prefix + "ay"
-        if englist.find(".")
+
+        match 
         platin = platin + englist_index + " "
     print(platin)
 
