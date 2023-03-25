@@ -1,4 +1,3 @@
-x = "hello there."
-if x.find(".") != -1:
-    print("true")
-print("done")
+x = ["abc", "efg", "hij."]
+x[2] = "a"
+print(x)

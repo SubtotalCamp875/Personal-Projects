@@ -10,7 +10,7 @@ def main():
 
         for j in englist[i]:
             if j in punctuation:
-                englist
+                englist[i] = englist[i].
         englist_index = str(englist[i]).replace(prefix, "", 1) + prefix + "ay"
 
 
