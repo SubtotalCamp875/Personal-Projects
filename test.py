@@ -1,2 +1,4 @@
-x = ["12", "23", "34", "45", "56"]
-print(x[1][0])
+x = "hello there."
+if x.find(".") == True:
+    print("true")
+print("done")
