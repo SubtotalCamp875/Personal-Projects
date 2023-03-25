@@ -12,9 +12,8 @@ def main():
 
         for j in englist[i]:
             if j in punctuation:
-                suffix = j
+                suffix += j
                 englist[i] = englist[i].replace(j, "")
-                quit
 
         platin += " " + str(englist[i]).replace(prefix, "", 1) + prefix.lower() + "ay" + suffix
 
