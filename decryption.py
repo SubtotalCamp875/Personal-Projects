@@ -1,3 +1,2 @@
-dict = {zip("abcdefghijklmnopqrstuvwxyz"):zip(str(range(26)))}
-x = {1:"a", 2:"b"}
-print(x["a"])
+dict = dict(zip(range(25)), zip("abcdefghijklmnopqrstuvwxyz"))
+print(dict[1])
