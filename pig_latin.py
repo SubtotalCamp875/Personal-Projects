@@ -4,7 +4,7 @@ def main():
     englist, platin, punctuation = english.split(" "), "", [".", ",", "!", "?", ";", ":", '"', "'", "(", ")", "[", "]"]
     for i in range(len(englist)):
 
-        prefix = ""
+        prefix, suffix = "", ""
         if englist[i][0].lower().strip not in ["a", "e", "i", "o", "u"]:
             prefix = englist[i][0]
 
@@ -14,15 +14,9 @@ def main():
                 englist[i] = englist[i].replace(j, "")
                 quit
 
-        englist_index = str(englist[i]).replace(prefix, "", 1) + prefix + "ay" + suffix
+        platin += " " + str(englist[i]).replace(prefix, "", 1) + prefix.lower() + "ay" + suffix
+
+    return(platin.capitalize())
 
 
-        platin = platin + englist_index + " "
-    print(platin)
-
-
-def ListToString():
-    pass
-
-
-main()
+print(main())

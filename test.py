@@ -1,3 +1,3 @@
-x = ["abc", "efg", "hij."]
-x[2] = "a"
+x = "hi"
+x += "a" + "b"
 print(x)
