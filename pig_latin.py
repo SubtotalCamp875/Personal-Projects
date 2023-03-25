@@ -18,5 +18,5 @@ def main():
 
     return(platin)
 
-
-print(f"Pig Latin: {main()}")
+while True:
+    print(f"\nPig Latin: {main()}", end="\n")
