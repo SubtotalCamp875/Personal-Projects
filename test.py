@@ -1,2 +1,3 @@
-list = ""
-print(type(list))
+list = ["", ""]
+list = list.append("hi")
+print(list)
