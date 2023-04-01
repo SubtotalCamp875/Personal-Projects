@@ -21,7 +21,7 @@ def main():
                     case "1" | "one":
                         area = int(length[0]) * int(length[1])
                         tiles = area/100
-                        return(print(f"\nYou will need {tiles} of the 10in. by 10in. Tiles.\nIndividaul tiles will cost $5.00 so you would need ${tiles*5} worth of tiles. \n"))
+                        return(print(f"\nYou will need {tiles} of the 10in by 10in Tiles.\nIndividaul tiles will cost $5.00 so you would need ${tiles*5} worth of tiles. \n"))
                     case "2" | "two":
                         pass
             except IndexError: print("You provided invalid syntax.")
