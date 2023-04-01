@@ -14,6 +14,7 @@ def main():
         case "2" | "flooring" | "two":
             try:
                 length, flooring = input('Please input values in forms of "1x2" inches: ').replace(" ", "").split("x"), float(input("What kind of flooring would you like? \n1. 10in x 10in Tiles\n2. Carpet\nSelection: "))
+            except: pass
         case "3" | "lighting" | "three":
             pass
 
