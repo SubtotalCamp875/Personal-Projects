@@ -10,7 +10,7 @@ def main():
                 area = float(input("How many walls will you be painting? ")) * float(area[0]) * float(area[1])
                 cans = math.ceil(area/x)
             except IndexError: print("You provided invalid syntax.")
-            print(f"You will need {cans} cans of paint for {area} inches of wall. \nEach can of paint will cost $25. \nYour total cost will be {cans*25}.\n")
+            print(f"You will need {cans} cans of paint for {area} inches of wall. \nEach can of paint will cost $25. \nYour total cost will be {cans*25}.\nYou will have {cans*size-area} inches of paint left over")
         case "2" | "flooring":
             pass
         case "3" | "lighting":
