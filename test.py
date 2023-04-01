@@ -1,14 +1,3 @@
-"""
-def main():
-    while True:
-        try: pass
-        except EOFError: break
+import math
 
-    while True:
-        try: remove x from container
-        #when container empty: break
-
-
-
-main()
-"""
+print(math.ceil(2.1))
