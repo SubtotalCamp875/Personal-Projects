@@ -1,7 +1,7 @@
 import math
 
 def main():
-    selection = input(f"Please select a department: \n1. Paint\n2. Flooring\n3. Lighting\nSelection: ").strip().lower()
+    selection = input(f"Welcome to Home Depot! \nPlease select a department: \n1. Paint\n2. Flooring\n3. Lighting\nSelection: ").strip().lower()
     match selection:
 
 
