@@ -1,3 +1,4 @@
+#total time spent: 1hr 30min
 import math
 
 def main():
