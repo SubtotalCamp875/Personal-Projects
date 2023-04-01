@@ -1,0 +1,245 @@
+
+def factorial(N1, Count_Factorial, Negative):
+    N1, Answer, Count = int(N1), int(N1), 1
+    while (N1-(Count_Factorial*Count) != 0): Answer, Count = Answer * (N1 - (Count_Factorial*Count)), Count+1
+    if Negative == True: Answer = '-'+str(Answer)
+    return Answer
+
+def sigma(Top, Bottom, Func):
+    for i in range(Top, Bottom):
+        x, Solution = i, 0
+        Solution += eval(Func)
+    return Solution
+
+def c_pi(Top, Bottom, Func):
+    for i in range(Top, Bottom):
+        x, Solution = i, 0
+        Solution *= eval(Func)
+    return Solution
+
+def root(N1, Nth): return eval(N1)**(1/Nth)
+
+Finish = 'N'
+while Finish in ['N', 'n']:
+    mode = str(input('(Please Enter An Integer Unless Shown Otherwise) (All Options Are Case Sensitive) 1 = Addition, 2 =  Subtraction, 3 = Multiplication, 4 = Division, 5 = Division W. Remainders, 6 = Exponents, 7 = Factorials Menu, 8 = Logarithm, 9 = Fraction Menu, 10 = Binary Menu, 11 = Roman >> Int, 12 = Trigonometry Menu, 13 = Roots)\nInput: '))
+
+    if mode == '1':
+        N1, N2 = float(input('Enter The First Addend: ')), float(input('Enter The Second Addend: '))
+        print(f'{str(N1)} Plus {str(N2)} Equals {str(N1+N2)}\n')
+    
+    if mode == '2':
+        N1, N2 = float(input('Enter The Minuend: ')), float(input('Enter The Subtrahend: '))
+        print(f'{str(N1)} Minus {str(N2)} Equals {str(N1-N2)}\n')
+    
+    if mode == '3':
+        N1, N2 = float(input('Enter The Multiplicand: ')), float(input('Enter The Multiplier: '))
+        print(f'{str(N1)} Times {str(N2)} Equals {str(N1*N2)}\n')
+    
+    if mode == '4':
+        Mode_Hold = '4'
+        N1, N2 = float(input('Enter The Dividend: ')), float(input('Enter The Divisor: '))
+        print(f'{str(N1)} Divided by {str(N2)} Equals {str(N1/N2)}\n')
+    
+    if mode == '5': 
+        N1, N2 = float(input('Enter The Dividend: ')), float(input('Enter The Divisor: '))
+        print(f'{str(N1)} Divided by {str(N2)} Equals {str(N1//N2)} R({N1%N2})\n')
+    
+    if mode == '6': 
+        N1, N2 = float(input('Enter The Base: ')), float(input('Enter the Power: '))
+        print(f'{str(N1)} To The Power Of {str(N2)} Equals {str(N1**N2)}\n')
+    
+    if mode == '7': mode = input('7a = Triangle Number, 7b = Factorials, 7c = Alternating Factorials, 7d = Primorials, 7e = Hyperfactorials\nInput: ')
+
+    if mode == '7a':
+        N1, Solution = int(input('Enter a Whole Number: ')), 0
+        for i in range(N1+1): Solution += N1-i
+        print(f'The Triangle Number for {N1} is {Solution}')
+        
+    if mode == '7b':
+        N1 = str(input('Enter A Whole Number Following By X Amount Of Factorials (Ex. "10!!" = 3840) (Ex. "1!0!" = 3840): '))
+        Count_Factorial, Negative = 0, False
+        while (N1.find('!') != -1): N1, Count_Factorial = N1.replace('!', '', 1), Count_Factorial + 1
+        if Count_Factorial == 0: Count_Factorial = 1
+        if N1.find('-') == 0: N1, Negative = N1.replace('-', ''), True
+        print(f'{factorial(N1, Count_Factorial, Negative)}\n')
+    
+    if mode == '7c':
+        Func = str(input('Give A Function For Alternating Factorial: '))
+        print(af(Func, ))
+       
+    if mode == '8':
+        N1 = int(input('What Is The Base Of The Logarithm? (Whole Number)'))
+        N2 = int(input('What Is The Power Of The Logarithm? (Whole Number)'))
+        N2_Comparator, Answer = 1, 1
+        while (N2_Comparator <= N2-1):
+            if Answer >= 2: N2_Comparator *= N1
+            elif Answer == 1: N2_Comparator = N1**2
+            Answer += 1
+        if N2_Comparator == N2: print(f'The Solution To The Logarithm Is {Answer}')
+        if N2_Comparator != N2: print(f'The Solution To The Logarithm Is Not A Whole Number\n')
+        
+    if mode == '9': mode = str(input('(This Is Case Sensitive) (Use Whole Number Expect When Asked For Decimals) 9a = M>>f, 9b = F>>M, 9c = F>>D, 9d = M>>D, 9e = D>>F, 9f = D>>M\nInput:'))
+    
+    if mode == '9a':
+        N1, N, D = int(input('What Is Your Whole Number? ')), int(input('What Is Your Numerator?')), int(input('What Is Your Denominator?'))
+        print(f'The Faction Is {N+(N1*D)}/{D}\n')
+            
+    if mode == '9b':
+        N, D = int(input('What Is Your Numerator?')), int(input('What Is Your Denominator?'))
+        print(f'The Mix Number Is {N//D} and {N%D}/{D}\n')
+            
+    if mode == '9c':
+        N, D = int(input('What Is Your Numerator?')), int(input('What Is Your Denominator?'))
+        print(f'The Decimal Is {N/D}\n')
+        
+    if mode == '9d':
+        N1, N, D = int(input('What Is Your Whole Number? ')), int(input('What Is Your Numerator?')), int(input('What Is Your Denominator?'))
+        N_Holder = N1*D+N
+        print(f'The Decimal Is {N_Holder/D}\n')
+        
+    if mode in ['9e', '9f']:
+        D, Count = float(input('What Is Your Decimal? ')), 1
+        while (D != int(D)): D, Count = D*10, Count*10
+        while (D/2 == int(D/2) and Count/2 == int(Count/2) or D/5 == int(D/5) and Count/5 == int(Count/5)):
+            if D/2 == int(D/2) and Count/2 == int(Count/2): D, Count = D/2, Count/2
+            if D/5 == int(D/5) and Count/5 == int(Count/5): D, Count = D/5, Count/5
+        if mode == '9e': print(f'Your Fraction Is {int(D)}/{int(Count)}\n')
+        if mode == '9f': print(f'Your Fraction Is {int(D)//int(Count)} and {int(D)%int(Count)}/{int(Count)}\n')
+    
+    if mode == '10': mode = str(input('(The code is case sensitive) 10a = N >> B, 10b = B >> N, 10c = AZ >> B, 10d = B >> AZ\n Input:'))
+
+    if mode == '10a':
+        N1 = int(input('Pick A Whole Number From 1-1023? '))
+        Binary, Store, Count, N1_Hold = '0b', 512, 10, N1
+        if N1 > 1023:
+            N1 = 0
+            print('Your Number Is Larger Than 1023')
+        for i in range(10):
+            if N1-Store != abs(N1-Store): Binary, Store = Binary+'0', Store/2
+            elif N1-Store == abs(N1-Store): Binary, N1, Store = Binary+'1', N1-Store, Store/2
+        if Binary != '0b':
+            print(f'Your Binary Code For {N1_Hold} Is {Binary}\n')
+
+    if mode == '10b':
+        N1 = str(input('Enter A Series Of Numbers Using 1 and 0 (Enter 10 digits (If You Enter Less Than 10, 0 Will Be Automatically Added To the End. If It Is Over 10 digits, It Will Ignore The 11th And Etc...)): '))
+        Count, Hold, Answerm = 0, 512, 0
+        while len(N1) < 10: N1 = '0'+N1
+        for i in range(10):
+            if N1[i] == '1': Answer, Hold = Answer+Hold, Hold/2
+            else: Hold = Hold/2
+        print(f'Your Number For {N1} Is {Answer}\n')
+
+    if mode == '10c':
+        Letter = str(input('Enter An Alphabet From A-Z or a-z (First 3 Digit Signals If It Is Upper or Lower Case): '))
+        List = ['0','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+        Count, Hold = 1, 16
+        while (List[Count] != Letter): Count += 1
+        if Count < 27: Answer = '011'
+        if Count > 26: Answer, Count = '010', Count-26
+        while (Count > 0):
+            if Count-Hold != abs(Count-Hold): Answer += '0'
+            elif Count-Hold == abs(Count-Hold): Count, Answer = Count-Hold, Answer+'1'
+            Hold /= 2
+        while (len(Answer) < 8): Answer += '0'
+        print(f'Your Binary Code For {Letter} Is {Answer}\n')
+            
+    if mode == '10d':
+        N1 = str(input('Start With "010" (Capital) Or "011" (Lower). Followed by 5 digits (Ex. "01000011"): '))
+        Count, Hold, Answer_Hold, N1_Hold = 5, 16, 0, N1
+        if N1.find('011') == 0: N1, UP = N1.replace('011', '', 1), False
+        if N1.find('010') == 0: N1, UP = N1.replace('010', '', 1), True
+        for i in range(5):
+            if N1.find('0') == 0: N1 = N1.replace('0', '', 1)
+            elif N1.find('1') == 0: N1, Answer_Hold = N1.replace('1', '', 1), Answer_Hold+Hold
+            Hold /= 2
+        if Answer_Hold > 26: print('The Number You Entered Is Larger Then 26')
+        if Answer_Hold < 27:
+            List = ['0','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+            if UP == True: Answer_Hold += 26
+            print(f'The Alphabetical Letter For {N1_Hold} Is "{List[int(Answer_Hold)]}"\n')
+    
+    if mode == '11':
+        N1 = input('Enter A Roman Value With These Given Symbols:\nI, V, X, L, C, D, M\nInput:')
+        decimal, prev, hold, value = 0, 0, N1, {'M':1000, 'D':500, 'C':100, 'L':50, 'X':10, 'V':5, 'I':1}
+        for i in N1:
+            current = value[i]
+            decimal += current
+            if current > prev:
+                decimal -= prev*2
+            prev = current
+        print(f'The Integer Value For {N1} Is {decimal}\n')
+    
+    if mode == '12': mode = str(input('(Use 6.18 Instead Of 2pi) (Add "2" for Arc. ex. 12a2 = ArcSinX (Answer ~= ArcX)) 12a = sinX (rad), 12b = cosX (rad), 12c = tanX (rad), 12d = sinX (deg), 12e = cosX (deg), 12f = tanX (deg), 12g = rad >> deg, 12h = deg >> rad\nInput: '))
+
+    #Input
+    if mode in ['12a', '12b', '12c', '12d', '12e', '12f', '12a2', '12b2', '12c2', '12d2', '12e2', '12f2']:
+        if mode in ['12a', '12a2']: N1 = float(input('What Is Your Radian For Sine?'))
+        elif mode in ['12d', '12d2']: N1 = float(input('What Is Your Degree For Sine?'))
+        elif mode in ['12b', '12b2']: N1 = float(input('What Is Your Radian For Cosine?'))
+        elif mode in ['12e', '12e2']: N1 = float(input('What Is Your Degree For Cosine?'))
+        elif mode in ['12c', '12c2']: N1 = float(input('What Is Your Radian For Tangent?'))
+        elif mode in ['12f', '12f2']: N1 = float(input('What Is Your Degree For Sine?'))
+        
+    #Define Variables
+        Positive, N1_Hold, Cosine, Answer_Cosine, Answer_Sine = False, N1, 0, N1, N1
+        if mode in ['12d', '12e', '12f', '12d2', '12e2', '12f2']:
+            N1 *= (180/3.14159265359)
+            Answer_Cosine, Answer_Sine = N1, N1
+        
+    #solves for Sine and Cosine
+        if mode in ['12a', '12b', '12c', '12d', '12e', '12f']:
+            for j in range(2):
+                if j == 1: Answer_Sine, Answer_Cosine, Cosine = Answer_Cosine, 1, 1
+                for i in range(3, 15, 2):
+                    i -= Cosine
+                    Factorial = factorial(i, 1, False)
+    #Checking for + or - for Sine Equation
+                    if Positive == True: Answer_Cosine, Positive = Answer_Cosine + ((N1**i) / Factorial), False
+                    elif Positive == False: Answer_Cosine, Positive = Answer_Cosine - ((N1**i) / Factorial), True
+    #Solves for Arc Sine and Cosine
+        if mode in ['12a2', '12b2', '12d2', '12e2']:
+            Answer_Sine = (3*Answer_Sine) / (2 + root(1 - (Answer_Sine**2), 2))
+            Answer_Cosine = (3.14159265359/2) - Answer_Sine
+            
+        Answer_Cosine, Answer_Sine, Answer_Tangent = str(Answer_Cosine), str(Answer_Sine), str(float(Answer_Sine) / float(Answer_Cosine))
+        if mode in ['12c2', '12f2']:
+            Answer_Tangent = (3*(N1/(root(N1**2+1, 2)))) / (2+root(1-(N1/(root(N1**2+1, 2))**2), 2))
+    #Output
+        
+        if mode in ['12a', '12a2']: print(f'The (Arc)Sine For {N1} Is {Answer_Sine[0:13]}\n')
+        elif mode in ['12b', '12b2']: print(f'The (Arc)Cosine For {N1} Is {Answer_Cosine[0:13]}\n')
+        elif mode in ['12c', '12c2']: print(f'The (Arc)Tangent For {N1} is {str(Answer_Tangent)[0:13]}\n')
+        elif mode in ['12d', '12d2']: print(f'The (Arc)Sine For {N1_Hold} Degree Is {Answer_Cosine[0:13]}\n')
+        elif mode in ['12e', '12e2']: print(f'The (Arc)Cosine For {N1_Hold} Degree Is {Answer_Cosine[0:13]}\n')
+        elif mode in ['12f', '12f2']: print(f'The (Arc)Tangent For {N1_Hold} Degree Is {str(Answer_Tangent)[0:13]}\n')
+                                             
+    if mode == '12g':
+        N1 = float(input('What Is Your Radian?'))
+        N1_Hold, N1 = N1, N1*(180/3.14159265359)
+        print(f'The Degree For {N1_Hold} Is {N1}\n')
+    
+    if mode == '12h':
+        N1 = float(input('What Is Your Degree?'))
+        N1_Hold, N1 = N1, N1*(3.14159265359/180)
+        print(f'The Degree For {N1_Hold} Is {N1}\n')
+        
+    if mode == '13': mode = input('13a = Square Roots, 13b = Cube Root, 13c = X-th Root\nInput:')
+    
+    if mode in ['13a', '13b', '13c']:
+        N1 = input('Enter Equation Or Value')
+        if mode == '13a': print(f'The Square Root Of {N1} is {root(N1, 2)}\n')
+        if mode == '13b': print(f'The Cube Root Of {N1} is {root(N1, 3)}\n')
+        if mode == '13c': 
+            Nth = input(f'{N1} To The 1/Xth Power: ')
+            print(f'The {Nth}th Root Of {N1} is {root(N1, Nth)}\n')
+    
+    Total_Mode = {'1':1, '2':2, '3':3, '4':4, '5':5, '6':6, '7':7, '7a':8, '7b':9, '8':10, '9':11, '9a':12, '9b':13, '9c':14, '9d':15, '9e':16, '9f':17, '10':18, '10a':19, '10b':20, '10c':21, '10d':22, '11':23, '12':24, '12a':25, '12b':26, '12c':27, '12d':28, '12e':29, '12f':30, '12g':31, '12h':32, '12a2':33, '12b2':34, '12c2':35, '12d2':36, '12e2':37, '12f2':38, '13':39, '13a':40, '13b':41, '13c':42}
+    if mode in Total_Mode:
+        pass
+    else: print('The Value You Entered Is Not An Option\n')
+
+
+
+
+
+
