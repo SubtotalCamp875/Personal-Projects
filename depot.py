@@ -1,5 +1,4 @@
-#total time spent: 1hr 30min
-#11:10
+#total time spent: 2hr 30min
 import math, time
 
 def Main():
