@@ -10,6 +10,7 @@ def main():
 
             case "1" | "paint" | "one": #Painting
                 length, walls = input('What is the length and width of your wall? Please input values in forms of "1x2" inches: ').replace(" ", "").split("x"), float(input("How many walls will you be painting? "))
+#tests for negetive
                 if "-" in [walls, length]: return(print("The input must not be negative!\n"))
                 area = walls * float(length[0]) * float(length[1])
                 cans = math.ceil(area/350)
@@ -21,6 +22,7 @@ def main():
                 area = int(length[0]) * int(length[1])
                 if flooring == "1": return(print(f"\nYou will need {area/100} of the 10in by 10in Tiles.\nIndividaul tiles will cost $5.00 so you would need ${(area/100)*5} worth of tiles. \n"))
                 if flooring == "2": pass
+#tests for negetive
                 if "-" in [flooring, length]: return(print("The input must not be negative!\n"))
                 else: return(print("The choise you entered was not listed above\n"))
 
@@ -30,6 +32,7 @@ def main():
                 if amount == float: return(print(f"You can not get {amount} of a light!"\n))
                 if light == "1": return(print(f"Each light wull cost $5.00 so your total cost for {amount} lights will be ${int(amount)*5}.00"))
                 if light == "2": return(print(f"Each light wull cost $15.00 so your total cost for {amount} lights will be ${int(amount)*15}.00"))
+#tests for negetive
                 if "-" in [light, amount]: return(print("The input must not be negative!\n"))
                 else: return(print("The choise you entered was not listed above\n"))
 
