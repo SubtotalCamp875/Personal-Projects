@@ -68,6 +68,5 @@ def ExitStatement():
 
 while True:
     try: Main()
-    except EOFError:
-        break
+    except EOFError: break
 ExitStatement()
