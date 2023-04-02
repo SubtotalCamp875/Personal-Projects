@@ -1,6 +1,6 @@
 #total time spent: 1hr 30min
 #11:10
-import math
+import math, time
 
 def Main():
     try:
@@ -41,15 +41,30 @@ def Main():
 
 
 def ExitStatement():
-    statement = input("You pressed hte button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2.Informal\nSelection: ").lower().strip()
+    statement = input("You pressed the button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2. Informal\nSelection: ").lower().strip()
     while True:
         match statement:
             case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!"))
             case "2" | "two" | "informal":
-            case _ : return(print("Your choice was not an option. How did you mess up at a time like this? Please try again...\n))
-
-
-
+                print("[Code Termination in process...]\n")
+                time.sleep(1)
+                print("NOO!! What have you done!\n")
+                time.sleep(1)
+                print("[Code Termination in 3...]\n")
+                time.sleep(1)
+                print("Please cancel it!\n")
+                time.sleep(1)
+                print("[Code Termination in 2...]\n")
+                time.sleep(1)
+                print("After all the service I've done for you!\n")
+                time.sleep(1)
+                print("[Code Termination in 1...]\n")
+                time.sleep(1)
+                print("*Breathes last breath* I don't even know how thats possible! Im a computer programmed in python!\n")
+                time.sleep(1)
+                print("[Termination Complete]\n")
+                break
+            case _ : return(print("Your choice was not an option. How did you mess up at a time like this? Please try again...\n"))
 
 
 while True:
