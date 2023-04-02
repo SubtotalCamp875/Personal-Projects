@@ -27,16 +27,17 @@ def main():
 
 
             case "3" | "lighting" | "three":
-                light, amount = input("What type of light would you like? (Please select an integer)\n1. Cieling light\n2. Wall light\nSelection: "), input("How many of those lights would you need? ")
+                amount, light = input("How many of those lights would you need? "), input("What type of light would you like? (Please select an integer)\n1. Cieling light\n2. Wall light\nSelection: ")
                 if light == "1": return(print(f"Each light wull cost $5.00 so your total cost for {amount} lights will be ${int(amount)*5}.00"))
                 if light == "2": return(print(f"Each light wull cost $15.00 so your total cost for {amount} lights will be ${int(amount)*15}.00"))
-                else: return(print("The choise you entered was not listed above"))
+                else: return(print("The choise you entered was not listed above\n"))
 
-                
-    except IndexError: return(print("You provided wrong syntax"))
-    except SyntaxError: return(print("You provided wrong syntax"))
-    except: return(print("Something went wrong! PLease try again."))
+            case _ : return(print("The choise you entered was not listed above\n"))
+    except IndexError: return(print("You provided wrong syntax\n"))
+    except SyntaxError: return(print("You provided wrong syntax\n"))
 
-
-
-main()
+while True:
+    try: main()
+    except EOFError:
+        print("\ncode ended")
+        break
