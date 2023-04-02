@@ -23,7 +23,7 @@ def main():
                     return(print(f"\nYou will need {tiles} of the 10in by 10in Tiles.\nIndividaul tiles will cost $5.00 so you would need ${tiles*5} worth of tiles. \n"))
                 if flooring == "2":
                     pass
-                else: return(print("The choise you entered was not listed above"))
+                else: return(print("The choise you entered was not listed above\n"))
 
 
             case "3" | "lighting" | "three":
