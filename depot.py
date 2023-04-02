@@ -16,7 +16,7 @@ def main():
 
 
             case "2" | "flooring" | "two": #Flooring
-                length, flooring = input('What is the length and width of your floor? Please input values in forms of "1x2" inches: ').replace(" ", "").split("x"), str(input("What kind of flooring would you like? (Please enter an integer)\n1. 10in. by 10in. Tiles\n2. Carpet\nSelection: ")).lower().strip()
+                flooring, length = str(input("What kind of flooring would you like? (Please enter an integer)\n1. 10in. by 10in. Tiles\n2. Carpet\nSelection: ")).lower().strip(), input('What is the length and width of your floor? Please input values in forms of "1x2" inches: ').replace(" ", "").split("x")
                 area = int(length[0]) * int(length[1])
                 if flooring == "1":
                     tiles = area/100
