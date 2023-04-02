@@ -42,11 +42,12 @@ def Main():
 
 def ExitStatement():
     statement = input("You pressed hte button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2.Informal\nSelection: ").lower().strip()
-    match statement:
-        case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time."))
-        case "2" | "two" | "informal":
-        case _ : return(print("Your choice was not an option. How did you mess up at a time like this? Please try again...))
-            
+    while True:
+        match statement:
+            case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!"))
+            case "2" | "two" | "informal":
+            case _ : return(print("Your choice was not an option. How did you mess up at a time like this? Please try again...\n))
+
 
 
 
