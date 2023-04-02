@@ -10,7 +10,7 @@ def main():
 
             case "1" | "paint" | "one": #Painting
                 length, walls = input('What is the length and width of your wall? Please input values in forms of "1x2" inches: ').replace(" ", "").split("x"), float(input("How many walls will you be painting? "))
-                if "-" in [flooring, length]:
+                if "-" in [walls, length]:
                     return(print("The input must not be negative!\n"))
                 area = walls * float(length[0]) * float(length[1])
                 cans = math.ceil(area/350)
