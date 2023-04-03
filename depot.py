@@ -31,8 +31,8 @@ def Main():
 
                 if amount == float: return(print(f"You can not get {amount} of a light!\n"))
                 if "-" in [light, amount]: return(print("The input must not be negative!\n"))
-                if light == "1": return(print(f"Each light wull cost $5.00 so your total cost for {amount} lights will be ${int(amount)*5}"))
-                elif light == "2": return(print(f"Each light wull cost $15.00 so your total cost for {amount} lights will be ${int(amount)*15}"))
+                if light == "1": return(print(f"Each light wull cost $5.00 so your total cost for {amount} lights will be ${int(amount)*5}\n"))
+                elif light == "2": return(print(f"Each light wull cost $15.00 so your total cost for {amount} lights will be ${int(amount)*15}\n"))
                 else: return(print("The choice you entered was not listed above\n"))
 
             case _ : return(print("The choice you entered was not listed above\n"))
