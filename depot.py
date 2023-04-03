@@ -20,7 +20,7 @@ def Main():
                 area = float(length[0]) * float(length[1])
 
                 if "-" in [flooring, length]: return(print("The input must not be negative!\n"))
-                if flooring == "1": return(print(f"\nYou will need {round(area/100, 2)} of the 10in by 10in Tiles.\nIndividaul tiles will cost ${cost}.00 so you would need ${round((area/100), 2)*cost} worth of tiles. \n"))
+                if flooring == "1": return(print(f"\nTo cover {area} square inches, you will need {round(area/100, 2)} of 10in by 10in Tiles.\nIndividaul tiles will cost ${cost}.00 so you would need ${round((area/100), 2)*cost} worth of tiles. \n"))
                 elif flooring == "2": return(print(f"The cost for {round((area/144), 2)} square feet of carpet is ${round((area/144), 2)*4} when each square feet of carpet cost $4.00\n"))
 
                 else: return(print("The choice you entered was not listed above\n"))
