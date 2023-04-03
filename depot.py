@@ -12,7 +12,7 @@ def Main():
                 cans = math.ceil(area/capacity)
 
                 if "-" in [walls, length]: return(print("The input must not be negative!\n"))
-                return(print(f"\nYou will need {round(cans, 2)} cans of paint for {round(area, 2)} square inches of wall. \nEach can of paint will cost ${round(cost, 2)} and cover {round(capacity, 2)} square inches. \nYour total cost will be {round(cans*cost, 2)} dollars.\nYou will have {round(cans*capacity-area, 2)} square inches of paint left over.\n"))
+                return(print(f"\nYou will need {round(cans, 2)} cans of paint for {round(area, 2)} square inches of wall. \nEach can of paint will cost ${round(cost, 2)}.00 and cover {round(capacity, 2)} square inches. \nYour total cost will be {round(cans*cost, 2)}.00 dollars.\nYou will have {round(cans*capacity-area, 2)} square inches of paint left over.\n"))
 
 
             case "2" | "flooring" | "two": #Flooring
@@ -20,9 +20,9 @@ def Main():
                 area = int(length[0]) * int(length[1])
 
                 if "-" in [flooring, length]: return(print("The input must not be negative!\n"))
-                if flooring == "1": return(print(f"\nYou will need {round(area/100, 2)} of the 10in by 10in Tiles.\nIndividaul tiles will cost ${round(cost, 2)} so you would need ${round((area/100)*cost, 2)} worth of tiles. \n"))
+                if flooring == "1": return(print(f"\nYou will need {round(area/100, 2)} of the 10in by 10in Tiles.\nIndividaul tiles will cost ${round(cost, 2)}.00 so you would need ${round((area/100)*cost, 2)} worth of tiles. \n"))
 
-                elif flooring == "2": return(print(f"The cost for {round((area/144), 2)} square feet of carpet is ${round((area/144)*4, 2)} when each square feet of carpet cost $4"))
+                elif flooring == "2": return(print(f"The cost for {round((area/144), 2)} square feet of carpet is ${round((area/144)*4, 2)} when each square feet of carpet cost $4.00"))
 
                 else: return(print("The choice you entered was not listed above\n"))
 
@@ -32,8 +32,8 @@ def Main():
 
                 if amount == float: return(print(f"You can not get {round(amount, 2)} of a light!\n"))
                 if "-" in [light, amount]: return(print("The input must not be negative!\n"))
-                if light == "1": return(print(f"Each light wull cost $5 so your total cost for {round(amount, 2)} lights will be ${round(int(amount)*5, 2)}"))
-                elif light == "2": return(print(f"Each light wull cost $15 so your total cost for {round(amount, 2)} lights will be ${round(int(amount)*15, 2)}"))
+                if light == "1": return(print(f"Each light wull cost $5.00 so your total cost for {round(amount, 2)} lights will be ${round(int(amount)*5, 2)}"))
+                elif light == "2": return(print(f"Each light wull cost $15.00 so your total cost for {round(amount, 2)} lights will be ${round(int(amount)*15, 2)}"))
                 else: return(print("The choice you entered was not listed above\n"))
 
             case _ : return(print("The choice you entered was not listed above\n"))
