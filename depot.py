@@ -12,7 +12,7 @@ def Main():
                 cans = math.ceil(area/capacity)
 
                 if "-" in [walls, length]: return(print("The input must not be negative!\n"))
-                return(print(f"\nYou will need {cans} cans of paint for {round(area, 2)} square inches of wall. \nEach can of paint will cost ${round(cost, 2)}.00 and cover {round(capacity, 2)} square inches. \nYour total cost will be {cans*cost}.00 dollars.\nYou will have {cans*capacity-round(area, 2)} square inches of paint left over.\n"))
+                return(print(f"\nYou will need {cans} cans of paint for {round(area, 2)} square inches of wall. \nEach can of paint will cost ${round(cost, 2)}.00 and cover {capacity} square inches. \nYour total cost will be {cans*cost}.00 dollars.\nYou will have {cans*capacity-round(area, 2)} square inches of paint left over.\n"))
 
 
             case "2" | "flooring" | "two": #Flooring
