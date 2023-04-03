@@ -42,7 +42,7 @@ def Main():
     except ValueError: return(print("You provided wrong syntax\n"))
 
 def ExitStatement():
-    statement = input("You pressed the button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2. Informal\nSelection: ").lower().strip()
+    statement = input("You pressed the button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2. Programmatic\nSelection: ").lower().strip()
     while True:
         match statement:
             case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!\n"))
