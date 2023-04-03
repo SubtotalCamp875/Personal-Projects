@@ -21,7 +21,10 @@ def Main():
 
                 if "-" in [flooring, length]: return(print("The input must not be negative!\n"))
                 if flooring == "1": return(print(f"\nYou will need {area/100} of the 10in by 10in Tiles.\nIndividaul tiles will cost ${cost}.00 so you would need ${(area/100)*{cost}} worth of tiles. \n"))
-                elif flooring == "2": pass
+
+                elif flooring == "2":
+                    type = input("What sizes or carpet would you like? \n1. )
+
                 else: return(print("The choice you entered was not listed above\n"))
 
 
