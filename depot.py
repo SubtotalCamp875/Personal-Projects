@@ -36,8 +36,8 @@ def Main():
                 else: return(print("The choice you entered was not listed above\n"))
 
             case _ : return(print("The choice you entered was not listed above\n"))
-    except IndexError: return(print("You provided wrong syntax\n"))
-    except SyntaxError: return(print("You provided wrong syntax\n"))
+            
+    except IndexError | SyntaxError | ValueError: return(print("You provided wrong syntax\n"))
 
 
 def ExitStatement():
