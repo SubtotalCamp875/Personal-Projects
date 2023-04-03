@@ -21,7 +21,7 @@ def Main():
 
                 if "-" in [flooring, length]: return(print("The input must not be negative!\n"))
                 if flooring == "1": return(print(f"\nYou will need {round(area/100, 2)} of the 10in by 10in Tiles.\nIndividaul tiles will cost ${cost}.00 so you would need ${round((area/100), 2)*cost} worth of tiles. \n"))
-                elif flooring == "2": return(print(f"The cost for {round((area/144), 2)} square feet of carpet is ${round((area/144), 2)*4} when each square feet of carpet cost $4.00"))
+                elif flooring == "2": return(print(f"The cost for {round((area/144), 2)} square feet of carpet is ${round((area/144), 2)*4} when each square feet of carpet cost $4.00\n"))
 
                 else: return(print("The choice you entered was not listed above\n"))
 
@@ -44,7 +44,7 @@ def ExitStatement():
     statement = input("You pressed the button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2. Informal\nSelection: ").lower().strip()
     while True:
         match statement:
-            case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!"))
+            case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!\n"))
             case "2" | "two" | "informal":
                 print("[Code Termination in process...]\n")
                 time.sleep(1)
