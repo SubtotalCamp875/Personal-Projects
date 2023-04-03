@@ -46,7 +46,7 @@ def ExitStatement():
     while True:
         match statement:
             case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!\n"))
-            case "2" | "two" | "programmic":
+            case "2" | "two" | "programmatic":
                 print("[Code Termination in process...]\n")
                 time.sleep(1)
                 print("[Code Termination in 3...]\n")
