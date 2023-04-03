@@ -49,15 +49,11 @@ def ExitStatement():
             case "2" | "two" | "programmatic":
                 print("[Code Termination in process...]\n")
                 time.sleep(1)
-                print("[Code Termination in 3...]\n")
-                time.sleep(1)
-                print("[Code Termination in 2...]\n")
-                time.sleep(1)
-                print("[Code Termination in 1...]\n")
-                time.sleep(1)
+                for i in reverse(range(2)):
+                    print(f"[Code Termination in {i+1}]")
                 print("[Termination Complete]\n")
                 break
-            case _ : return(print("Your choice was not an option. How did you mess up at a time like this? Please try again...\n"))
+            case _ : return(print("Your choice was not an option. How did you mess that up? Please try again...\n"))
 
 
 while True:
