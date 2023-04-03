@@ -1,2 +1,2 @@
-# private
-personal use of projects and tests
+# Personal Uses
+Projects that are created by me for fun and posts as records. Feel free to make a copy and change anything you see need wrong and use them in your own code. Credits (link to profile or Username) are unnecessary but appreciated!
