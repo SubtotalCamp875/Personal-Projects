@@ -41,6 +41,7 @@ def Main():
     except SyntaxError: return(print("You provided wrong syntax\n"))
     except ValueError: return(print("You provided wrong syntax\n"))
 
+
 def ExitStatement():
     statement = input("You pressed the button to end the code! Before you leave, allow us to say our farewell.\n1. Formal\n2. Programmatic\nSelection: ").lower().strip()
     while True:
