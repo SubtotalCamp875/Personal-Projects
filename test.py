@@ -4,3 +4,6 @@
 12 ft2
 """
 import math
+try:
+    x = input("")
+except EOFError | TypeError: print("broke")
