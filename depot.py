@@ -46,22 +46,14 @@ def ExitStatement():
     while True:
         match statement:
             case "1" | "one" | "formal": return(print("Thank You for shopping at Home Depot! Please come back next time!\n"))
-            case "2" | "two" | "informal":
+            case "2" | "two" | "programmic":
                 print("[Code Termination in process...]\n")
-                time.sleep(1)
-                print("NOO!! What have you done!\n")
                 time.sleep(1)
                 print("[Code Termination in 3...]\n")
                 time.sleep(1)
-                print("Please cancel it!\n")
-                time.sleep(1)
                 print("[Code Termination in 2...]\n")
                 time.sleep(1)
-                print("After all the service I've done for you!\n")
-                time.sleep(1)
                 print("[Code Termination in 1...]\n")
-                time.sleep(1)
-                print("*Breathes last breath* I don't even know how thats possible! Im a computer programmed in python!\n")
                 time.sleep(1)
                 print("[Termination Complete]\n")
                 break
