@@ -1,6 +1,3 @@
-while True:
-    for i in range(10):
-        if i == 5: break
-        else: print(i)
-    print("done")
-    break
+x = 0
+try: if x == 0: print(x)
+except: pass
