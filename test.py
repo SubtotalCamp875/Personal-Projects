@@ -1,4 +1,4 @@
-x = dict(zip("abcdefg","1234567"))
+x = dict(zip("abcdefg","))
 a = "abcd"
 a_dummy = []
 
