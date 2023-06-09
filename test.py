@@ -11,4 +11,5 @@ def request_input():
     sign, a, b = list(input("sign (1=+, 0=-): ")), str(input("input of change in height: ")).replace(" ","").split(","), str(input("input of distance: ")).replace(" ","").split(",")
     return(sign, a, b)
 
-print(request_input())
+sign, a, b = request_input()
+print(sign)
