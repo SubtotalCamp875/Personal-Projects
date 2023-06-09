@@ -12,4 +12,4 @@ def request_input():
     return(sign, a, b)
 
 sign, a, b = request_input()
-print(sign)
+print(a)
