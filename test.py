@@ -4,6 +4,7 @@ def main():
     a_dummy = input("a: ")
     for i in range(len(a_dummy)):
         print(a_dummy[i])
+        print(notes["b"])
         if a_dummy[i] in ["a","b","c","d","e","f","g"]: a.append(notes[a[i]])
         else: return(print("please input notes"))
 
