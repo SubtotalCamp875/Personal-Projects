@@ -8,7 +8,7 @@ for i in range(len(a)):
         a_dummy.append(x[a[i]])
 
 def request_input():
-    sign, a, b, steps = list(input("sign (1=+, 0=-): ")), str(input("input of change in height: ")).replace(" ","").split(","), str(input("input of distance: ")).replace(" ","").split(",")
-    return(sign, a, b, steps)
+    sign, a, b = list(input("sign (1=+, 0=-): ")), str(input("input of change in height: ")).replace(" ","").split(","), str(input("input of distance: ")).replace(" ","").split(",")
+    return(sign, a, b)
 
 print(request_input())
