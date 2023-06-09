@@ -1,1 +1,3 @@
-print(("\ng\left(x,n,t\ "+"right)\ =\ \ "+"frac{n}{1+e^{60\left(-x+.5t\ "+"right)}}").replace(" r","r").replace(" f","f"))
+a = {"a":1, "b":2, "c":3, "d":4}
+x = "ab"
+print(a[x])
