@@ -1,4 +1,5 @@
-x = dict(zip("abcdefg","))
+values = ["1","1.5","2","2.5","3","3.5","4"]
+x = dict(zip("abcdefg",values))
 a = "abcd"
 a_dummy = []
 
