@@ -7,4 +7,8 @@ for i in range(len(a)):
     if a[i] in ["a","b","c","d","e","f","g"]:
         a_dummy.append(x[a[i]])
 
-print(a_dummy)
+def request_input():
+    sign, a, b, steps = list(input("sign (1=+, 0=-): ")), str(input("input of change in height: ")).replace(" ","").split(","), str(input("input of distance: ")).replace(" ","").split(",")
+    return(sign, a, b, steps)
+
+print(request_input())
