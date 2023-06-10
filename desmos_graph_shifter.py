@@ -1,36 +1,37 @@
 def main():
 
-    func = int(input("1 = Coordinate Pairs, 2 = Shift Horizontal, 3 = Create W. Notes: "))
-    steps = ["0.5","1","1.5","2","2.5","3","3.5"]
-    notes = dict(zip("abcdefg",steps))
+    func = int(input('1 = Coordinate Pairs, 2 = Shift Horizontal, 3 = Create W. Notes: '))
+    steps = ['10','11','12','13','1','2','3','4','5','6','7','8']
+    notes_list = ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
+    notes = dict(zip('abcdefg',steps))
 
     match func:
 
         case 1:
             sign, a, b = request_input()
             sign = sign_list(sign)
-            for i in range(len(a)): print(f"{sign[i]}{a[i]},{b[i]}")
+            for i in range(len(a)): print(f'{sign[i]}{a[i]},{b[i]}')
 
         case 2:
             sign, a, b = request_input()
             sign = sign_list(sign)
-            unchanged, adder = int(input("How many do you want unchanged: ")), int(input("How much do you want to shift (+x/-x): "))
-            print("\ny_{1}=",end="")
+            unchanged, adder = int(input('How many do you want unchanged: ')), int(input('How much do you want to shift (+x/-x): '))
+            print('\ny_{1}=',end='')
             for i in range(unchanged):
-                print(f"{sign[i]}g\left(x,{a[i]},{b[i]}\ right)".replace(" ",""),end = "")
+                print(f'{sign[i]}g\left(x,{a[i]},{b[i]}\ right)'.replace(' ',''),end = '')
 
             for i in range(len(a)-unchanged):
                 i += unchanged
-                print(f"{sign[i]}g\left(x,{a[i]},{float(b[i])+adder}\ right)".replace(" ","").replace(".0",""),end = "")
-            print(("\ng\left(x,n,t\ "+"right)\ =\ \ "+"frac{n}{1+e^{60\left(-x+.5t\ "+"right)}}").replace(" r","r").replace(" f","f"))
+                print(f'{sign[i]}g\left(x,{a[i]},{float(b[i])+adder}\ right)'.replace(' ','').replace('.0',''),end = '')
+            print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
 
         case 3:
-            sign, a, a_dummy = "1", [], str(input("Input notes (ex. a,b,c,d): ")).replace(" ","").split(",")
+            sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).replace(' ','').split(',')
             for i in range(len(a_dummy)):
 
                 #converts a-z >> #
-                if a_dummy[i] in ["a","b","c","d","e","f","g"]: a.append(float(notes[a_dummy[i]]))
-                else: return(print("please input notes"))
+                if a_dummy[i] in ['a','b','c','d','e','f','g']: a.append(float(notes[a_dummy[i]]))
+                else: return(print('please input notes'))
 
                 #find differnce between value and prev value
                 if i == 0: continue
@@ -38,14 +39,14 @@ def main():
                     a[i] = float(notes[a_dummy[i-1]])-a[i]
                     if a[i] == -abs(a[i]):
                         a[i] = abs(a[i])
-                        sign += "1"
-                    else: sign += "0"
-            print(f'The difference in value is {str(a).replace(".0", "")} and sign = {sign}')
-    print(" ")
+                        sign += '1'
+                    else: sign += '0'
+            print(f"The difference in value is {str(a).replace('.0', '')} and sign = {sign}")
+    print(' ')
 
 
 def request_input():
-    sign, a, b = list(input("Sign (1=+, 0=-)(ex. 10110): ")), str(input("Input of change in height (ex. 1,1,2,5): ")).replace(" ","").split(","), str(input("Input of distance (ex. 2,5,8): ")).replace(" ","").split(",")
+    sign, a, b = list(input('Sign (1=+, 0=-)(ex. 10110): ')), str(input('Input of change in height (ex. 1,1,2,5): ')).replace(' ','').split(','), str(input('Input of distance (ex. 2,5,8): ')).replace(' ','').split(',')
     return(sign, a, b)
 
 
@@ -57,10 +58,10 @@ def sign_list(sign):
 
 
 def sign_assign(sign,i):
-    if sign[i] == "1": return("+")
-    if sign[i] == "0": return("-")
+    if sign[i] == '1': return('+')
+    if sign[i] == '0': return('-')
 
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
