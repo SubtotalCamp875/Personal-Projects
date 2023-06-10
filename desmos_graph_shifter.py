@@ -1,7 +1,7 @@
 def main():
 
     func = int(input('1 = Coordinate Pairs, 2 = Shift Horizontal, 3 = Create W. Notes: '))
-    notes_list, steps = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
+    steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
     notes = dict(zip(notes_list,steps))
 
     match func:
@@ -25,11 +25,11 @@ def main():
             print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
 
         case 3:
-            sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).replace(' ','').split(',')
+            sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).lower().replace(' ','').split(',')
             for i in range(len(a_dummy)):
 
                 #converts a-z >> #
-                if a_dummy[i] in ['a','b','c','d','e','f','g']: a.append(float(notes[a_dummy[i]]))
+                if a_dummy[i] in notes_list: a.append(float(notes[a_dummy[i]]))
                 else: return(print('please input notes'))
 
                 #find differnce between value and prev value
