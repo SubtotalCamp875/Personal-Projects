@@ -1,4 +1,8 @@
-x = -1
-if x != abs(x):
-    print(1)
-else: print(2)
+x = 1
+match x:
+    case 1|2:
+        print(1)
+    case 1:
+        print(1.5)
+    case 2:
+        print(3)
