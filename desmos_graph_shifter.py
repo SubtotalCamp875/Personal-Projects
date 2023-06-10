@@ -5,7 +5,6 @@ def main():
     notes = dict(zip(notes_list,steps))
 
     match func:
-
         case 1:
             sign, a, b = request_input()
             sign = sign_list(sign)
