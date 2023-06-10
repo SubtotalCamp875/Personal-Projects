@@ -1,9 +1,8 @@
 def main():
 
     func = int(input('1 = Coordinate Pairs, 2 = Shift Horizontal, 3 = Create W. Notes: '))
-    steps = ['10','11','12','13','1','2','3','4','5','6','7','8']
-    notes_list = ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
-    notes = dict(zip('abcdefg',steps))
+    notes_list, steps = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
+    notes = dict(zip(notes_list,steps))
 
     match func:
 
