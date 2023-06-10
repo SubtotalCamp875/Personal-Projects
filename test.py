@@ -1,4 +1,6 @@
 import random
 
-x = ["1","2","3","4"]
-print(random.choice(x))
+x = ""
+print(random.choice(range(11)))
+for i in range(11):
+    print(i)
