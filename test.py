@@ -1,8 +1,4 @@
-x = 1
-match x:
-    case 1|2:
-        print(1)
-    case 1:
-        print(1.5)
-    case 2:
-        print(3)
+import random
+
+x = ["1","2","3","4"]
+print(random.choice(x))
