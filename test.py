@@ -1,6 +1,7 @@
-import random
-
-x = ""
-print(random.choice(range(11)))
-for i in range(11):
-    print(i)
+x = 3
+y = 5
+for i in range(10):
+    for i in range(10):
+        if y == 5:
+            break
+    print(1)
