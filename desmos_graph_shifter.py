@@ -26,7 +26,7 @@ def main():
                 b_dummy += f'{float(b[i])+adder}, '
 
             print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
-            print(f'\n{sign_dummy}\n\n{a_dummy}\n\n{b_dummy[:-2]}')
+            print(f'\n{sign_dummy}\n\n{a_dummy}\n\n{b_dummy[:-1].replace(".0","")}')
 
         case 3:
             sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).lower().replace(' ','').split(',')
