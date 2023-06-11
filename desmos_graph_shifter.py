@@ -11,19 +11,20 @@ def main():
             for i in range(len(a)): print(f'{sign[i]}{a[i]},{b[i]}')
 
         case 2:
-            sign, a, b = request_input()
-            sign_dummy = sign
+            sign, sign_dummy, a, a_dummy, b = request_input()
             sign = sign_list(sign)
             unchanged, adder = int(input('How many do you want unchanged: ')), int(input('How much do you want to shift (+x/-x): '))
             print('\ny_{1}=',end='')
+
             for i in range(unchanged):
                 print(f'{sign[i]}g\left(x,{a[i]},{b[i]}\ right)'.replace(' ',''),end = '')
 
             for i in range(len(a)-unchanged):
                 i += unchanged
                 print(f'{sign[i]}g\left(x,{a[i]},{float(b[i])+adder}\ right)'.replace(' ','').replace('.0',''),end = '')
+                
             print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
-            print(f'\n{sign_dummy}\n\n{a}\n\n{b}')
+            print(f'\n{sign_dummy}\n\n{a_dummy}\n\n{b}')
 
         case 3:
             sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).lower().replace(' ','').split(',')
@@ -46,8 +47,9 @@ def main():
 
 
 def request_input():
-    sign, a, b = list(input('Sign (1=+, 0=-)(ex. 10110): ')), str(input('Input of change in height (ex. 1,1,2,5): ')).replace(' ','').split(','), str(input('Input of distance (ex. 2,5,8): ')).replace(' ','').split(',')
-    return(sign, a, b)
+    sign_dummy, a_dummy, b = input('Sign (1=+, 0=-)(ex. 10110): '), str(input('Input of change in height (ex. 1,1,2,5): ')).replace(' ',''), str(input('Input of distance (ex. 2,5,8): ')).replace(' ','').split(',')
+    sign, a = list(sign_dummy), a_dummy.split(',')
+    return(sign, sign_dummy, a, a_dummy, b)
 
 
 def sign_list(sign):
