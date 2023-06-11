@@ -12,6 +12,7 @@ def main():
 
         case 2:
             sign, a, b = request_input()
+            sign_dummy = sign
             sign = sign_list(sign)
             unchanged, adder = int(input('How many do you want unchanged: ')), int(input('How much do you want to shift (+x/-x): '))
             print('\ny_{1}=',end='')
@@ -22,7 +23,7 @@ def main():
                 i += unchanged
                 print(f'{sign[i]}g\left(x,{a[i]},{float(b[i])+adder}\ right)'.replace(' ','').replace('.0',''),end = '')
             print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
-            print(f'{sign}\n{a}\n{b}')
+            print(f'{sign_dummy}\n{a}\n{b}')
 
         case 3:
             sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).lower().replace(' ','').split(',')
