@@ -13,18 +13,20 @@ def main():
         case 2:
             sign, sign_dummy, a, a_dummy, b = request_input()
             sign = sign_list(sign)
-            unchanged, adder = int(input('How many do you want unchanged: ')), int(input('How much do you want to shift (+x/-x): '))
+            unchanged, adder, b_dummy = int(input('How many do you want unchanged: ')), int(input('How much do you want to shift (+x/-x): ')), ''
             print('\ny_{1}=',end='')
 
             for i in range(unchanged):
                 print(f'{sign[i]}g\left(x,{a[i]},{b[i]}\ right)'.replace(' ',''),end = '')
+                b_dummy += f'{b[i]}, '
 
             for i in range(len(a)-unchanged):
                 i += unchanged
                 print(f'{sign[i]}g\left(x,{a[i]},{float(b[i])+adder}\ right)'.replace(' ','').replace('.0',''),end = '')
-                
+                b_dummy += f'{float(b[i])+adder}, '
+
             print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
-            print(f'\n{sign_dummy}\n\n{a_dummy}\n\n{b}')
+            print(f'\n{sign_dummy}\n\n{a_dummy}\n\n{b[:-2]}')
 
         case 3:
             sign, a, a_dummy = '1', [], str(input('Input notes (ex. a,b,c,d): ')).lower().replace(' ','').split(',')
