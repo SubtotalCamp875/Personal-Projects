@@ -23,7 +23,7 @@ def main():
             for i in range(len(a)-unchanged):
                 i += unchanged
                 print(f'{sign[i]}g\left(x,{a[i]},{float(b[i])+adder}\ right)'.replace(' ','').replace('.0',''),end = '')
-                b_dummy += f'{float(b[i])+adder}, '
+                b_dummy += f'{float(b[i])+adder},'
 
             print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+.5t\ '+'right)}}').replace(' r','r').replace(' f','f'))
             print(f'\n{sign_dummy}\n\n{a_dummy}\n\n{b_dummy[:-1].replace(".0","")}')
