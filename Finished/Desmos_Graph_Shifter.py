@@ -47,27 +47,19 @@ def main():
             print(f"The difference in value is {str(a).replace('.0', '')} and sign = {sign}")
 
         case 4:
-            print("\nMake sure you are providing the correct syntax (some require commas, some don't) and capitalization (lower case) there must be the same amount of charaters for sign, height, AND distance. If you are using github terminal, right click to copy and right click to paste. Use ctrl+C / ctrl+V within github codespace and elsewhere.\n")
-            print('Link to graph: https://www.desmos.com/calculator/wsxy6t0fcr')
-            print('Desmos graph size settings: 0<y<12  -3<x<62')
-            print('sign = 110110011011000011011000110011011001101010011011000110 \nheight = 2,3,3,7,1,3,7,2,3,3,5,1,3,1,2,2,2,3,3,3,2,3,2,2,2,5,2,5,2,3,3,7,1,3,7,2,3,3,10,8,1,1,4,2,3,3,3,2,3,2,2,2,5,2 \ndistance = 1,2,3,4,6.5,10,15,16,17,18,19,21,24,26,27,28.8,30,31,32,33,36,38,40.5,41.5,44,46,50,55,57,58,59,60,62,66,70.5,71.5,72.5,73.5,74.5,77.5,79.5,82.5,83.5,85.5,86.5,87.5,88.5,91.5,93.5,96.5,97.5,101.5,102.5,106.5\n')
-            print('Credit: SubtotalCamp875 - https://github.com/SubtotalCamp875/Personal-Projects/tree/c77eed059c5f0be235725981f0aa0e64b67b6a79/Finished\n')
+            print("\nMake sure you are providing the correct syntax (some require commas, some don't) and capitalization (lower case) there must be the same amount of charaters for sign, height, AND distance. If you are using github terminal, right click to copy and right click to paste. Use ctrl+C / ctrl+V within github codespace and elsewhere. Copy and paste the large group of text from mode 2 into Desmos and it will automatically build.\n\nLink to graph: https://www.desmos.com/calculator/wsxy6t0fcr\nDesmos graph size settings: 0<y<12  -3<x<62\nsign = 110110011011000011011000110011011001101010011011000110 \nheight = 2,3,3,7,1,3,7,2,3,3,5,1,3,1,2,2,2,3,3,3,2,3,2,2,2,5,2,5,2,3,3,7,1,3,7,2,3,3,10,8,1,1,4,2,3,3,3,2,3,2,2,2,5,2 \ndistance = 1,2,3,4,6.5,10,15,16,17,18,19,21,24,26,27,28.8,30,31,32,33,36,38,40.5,41.5,44,46,50,55,57,58,59,60,62,66,70.5,71.5,72.5,73.5,74.5,77.5,79.5,82.5,83.5,85.5,86.5,87.5,88.5,91.5,93.5,96.5,97.5,101.5,102.5,106.5\n\nCredit: SubtotalCamp875 - https://github.com/SubtotalCamp875/Personal-Projects/tree/c77eed059c5f0be235725981f0aa0e64b67b6a79/Finished\n")
     print(' ')
-
-
 
 def request_input():
     sign_dummy, a_dummy, b = input('Sign (1=+, 0=-)(ex. 10110): '), str(input('Input the change in height (ex. 1,1,2,5): ')).replace(' ',''), str(input('Input of distance (ex. 2,5,8): ')).replace(' ','').split(',')
     sign, a = list(sign_dummy), a_dummy.split(',')
     return(sign, sign_dummy, a, a_dummy, b)
 
-
 def sign_list(sign):
     sign_dummy = []
     for i in range(len(sign)):
         sign_dummy.append(sign_assign(sign,i))
     return(sign_dummy)
-
 
 def sign_assign(sign,i):
     if sign[i] == '1': return('+')
