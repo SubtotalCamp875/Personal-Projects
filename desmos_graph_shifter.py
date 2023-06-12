@@ -65,7 +65,5 @@ def sign_assign(sign,i):
     if sign[i] == '1': return('+')
     if sign[i] == '0': return('-')
 
-
-
 if __name__ == '__main__':
     main()
