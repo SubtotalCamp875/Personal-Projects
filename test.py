@@ -1,17 +1,4 @@
-"""
-x = "1:2,3:4,5:6"
-x = x.split(',')
-print(x)
-for i in range(len(x)):
-    x[i] = x[i].split(':')
-print(x)
-print(x[1][0], x[1][1])
-print(len(x))
-
-for i in range(2):
-    print(i)
-
-y_{1}=g\left(x,10,10\right)+g\left(x,12,15\right)
-"""
-x = 1
-print(x.lower())
+steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
+notes = dict(zip(notes_list,steps))
+x = "a"
+print(notes(x))
