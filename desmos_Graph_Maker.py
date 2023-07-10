@@ -7,7 +7,7 @@ def main():
             for i in range(len(values)):
                 values[i] = values[i].split(':')
             for i in range(len(values)):
-                answer += f'+g\left(x,{values[i][0]},{values[i][1]}\right)'
+                answer += f'+g\left(x,{values[i][0]},{values[i][1]}\ right)'.replace(' ','')
 
 
 
