@@ -29,11 +29,13 @@ def main():
 
         case 4:
             values = input('Enter a list of values (ex. 1,2,d,e#,5): ').replace(' ','').split(',')
-            mode = input('Convert all to Letters (L) or Numbers (N)? ')
-            if mode == 'L':
-                for i in range(len(values)):
-                    values[i] = numbers[values[i]]
-            print(values)
+            for i in range(len(values)):
+                if values[i] in steps:
+                    letters = f'{numbers[values[i]]}, '
+                if values[i] in notes_list:
+                    number = f'{notes[values[i]]}, '
+            print(letters[0:-2], number[0:-2])
+
 
 
 
