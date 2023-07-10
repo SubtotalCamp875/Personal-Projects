@@ -41,7 +41,7 @@ def main():
                     letters_list += f'{values[i]}, '
             print(f'\n{letters_list[0:-2]}\n{number_list[0:-2]}\n')
 
-
+        case 5:
 
 
 
