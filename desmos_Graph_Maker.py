@@ -12,18 +12,13 @@ def main():
                 #replace notes with number
                 if values[i][0] in notes_list:
                     values[i][0] = notes[values[i][0]]
-                    #find difference between prev value and notes
-                    if i > 0:
-                        values[i][0] = int(values[i][0]) - int(values[i-1][0])
+                    #find difference between prev value and notes when notes is not the first value
+                    if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
                 answer += f'+g\left(x,{values[i][0]},{values[i][1]}\ right)'.replace(' ','')
             print(f'\n{answer}\n')
 
-
         case 2: pass
-
-
-
-
+        case 3: pass
 
 if __name__ == '__main__':
     main()
