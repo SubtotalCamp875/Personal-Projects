@@ -29,12 +29,17 @@ def main():
 
         case 4:
             values = input('Enter a list of values (ex. 1,2,d,e#,5): ').replace(' ','').split(',')
+            number_list, letters_list = '', ''
             for i in range(len(values)):
+                #turns number to letter if i is number and add number to number list
                 if values[i] in steps:
-                    letters = f'{numbers[values[i]]}, '
+                    letters_list += f'{numbers[values[i]]}, '
+                    number_list += f'{values[i]}, '
+                #turns letter to number if i is letter and add letter to letter list
                 if values[i] in notes_list:
-                    number = f'{notes[values[i]]}, '
-            print(letters[0:-2], number[0:-2])
+                    number_list += f'{notes[values[i]]}, '
+                    letters_list += f'{values[i]}, '
+            print(f'\n{letters_list[0:-2]}\n{number_list[0:-2]}\n')
 
 
 
