@@ -9,8 +9,8 @@ def main():
             values = input('Input n and t in forms of "n t,-n -t" etc: ').split(',')
             for i in range(len(values)):
                 values[i] = values[i].split(' ')
-                if values[i] in notes_list:
-                    values[i] = notes[values[i]]
+                #replace letter with number
+                if values[i][0] in notes_list: values[i][0] = notes[values[i][0]]
                 answer += f'+g\left(x,{values[i][0]},{values[i][1]}\ right)'.replace(' ','')
             print(f'\n{answer}\n')
 
