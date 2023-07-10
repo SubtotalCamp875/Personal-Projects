@@ -1,8 +1,10 @@
 def main():
     func = int(input('Graph maker = 1, Help/Explanation = 2: '))
     answer = "y_{ 1}=".replace(' ','')
-    steps, notes_list = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
-    notes, notes_list_upper = dict(zip(notes_list,steps)), notes_list.upper()
+    steps = ['10','11','12','13','1','2','3','4','5','6','7','8','9'],
+    notes_list =['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#'],
+    notes_list_upper = ['A', 'A#', 'B', 'B#', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
+    notes = dict(zip(notes_list,steps))
 
     match func:
         case 1:
