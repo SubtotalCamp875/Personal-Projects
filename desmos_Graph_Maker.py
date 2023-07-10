@@ -46,9 +46,9 @@ def convert(values, mode):
             letters_list += f'{numbers[values[i]]}, '
             numbers_list += f'{values[i]}, '
         #turns letter to number if i is letter and add letter to letter list
-        if values[i] in notes_list:
-            numbers_list += f'{notes[values[i]]}, '
-            letters_list += f'{values[i]}, '
+        if values[i].lower() in notes_list:
+            numbers_list += f'{notes[values[i].lower()]}, '
+            letters_list += f'{values[i].lower()}, '
 
     if mode == 'l': return(letters_list[0:-2])
     if mode == 'n': return(numbers_list[0:-2])
