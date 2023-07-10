@@ -2,7 +2,7 @@ def main():
     func = int(input('Graph maker = 1, Syntax Pairing = 2, Coordinate Pairs = 3, Conversion = 4, Help/Explanation = : '))
     answer = "y_{ 1}=".replace(' ','')
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
-    notes, numbers = dict(zip(notes_list,steps)), dict(zip(steps,notes_list))
+    notes = dict(zip(notes_list,steps))
 
     match func:
         case 1:
@@ -28,23 +28,30 @@ def main():
             for i in range(len(x)): print(f'{x[i]}, {y[i]}')
 
         case 4:
-            values = input('Enter a list of values (ex. 1,2,d,e#,5): ').replace(' ','').split(',')
-            number_list, letters_list = '', ''
-            for i in range(len(values)):
-                #turns number to letter if i is number and add number to number list
-                if values[i] in steps:
-                    letters_list += f'{numbers[values[i]]}, '
-                    number_list += f'{values[i]}, '
-                #turns letter to number if i is letter and add letter to letter list
-                if values[i] in notes_list:
-                    number_list += f'{notes[values[i]]}, '
-                    letters_list += f'{values[i]}, '
-            print(f'\n{letters_list[0:-2]}\n{number_list[0:-2]}\n')
+            values = input('Enter a list of values (ex. 1,2,d,e#,5): ')
+            print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
 
         case 5:
+            values = input('Enter list of values ()')
 
+def convert(values, mode):
+    steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
+    notes, numbers = dict(zip(notes_list,steps)), dict(zip(steps,notes_list))
+    values = values.replace(' ','').split(',')
+    numbers_list, letters_list = '', ''
 
+    for i in range(len(values)):
+        #turns number to letter if i is number and add number to number list
+        if values[i] in steps:
+            letters_list += f'{numbers[values[i]]}, '
+            numbers_list += f'{values[i]}, '
+        #turns letter to number if i is letter and add letter to letter list
+        if values[i] in notes_list:
+            numbers_list += f'{notes[values[i]]}, '
+            letters_list += f'{values[i]}, '
 
+    if mode == 'l': return(letters_list[0:-2])
+    if mode == 'n': return(numbers_list[0:-2])
 
 
 if __name__ == '__main__':
