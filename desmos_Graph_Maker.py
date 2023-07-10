@@ -2,7 +2,7 @@ def main():
     func = int(input('Graph maker = 1, Syntax Pairing = 2, Coordinate Pairs = 3, Conversion = 4, Help/Explanation = : '))
     answer = "y_{ 1}=".replace(' ','')
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
-    notes = dict(zip(notes_list,steps))
+    notes, numbers = dict(zip(notes_list,steps)), dict(zip(steps,notes_list))
 
     match func:
         case 1:
@@ -32,7 +32,7 @@ def main():
             mode = input('Convert all to Letters (L) or Numbers (N)? ')
             if mode == 'L':
                 for i in range(len(values)):
-                    values[i] = notes[values[i]]
+                    values[i] = numbers[values[i]]
             print(values)
 
 
