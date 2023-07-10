@@ -28,7 +28,7 @@ def main():
             for i in range(len(x)): print(f'{x[i]}, {y[i]}')
 
         case 4:
-            values = input('Enter a list of values (ex. 1,2,d,e#,5): ')
+            values = input('Enter a list of values (ex. 1,2,d#,e,5): ')
             print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
 
         case 5:
