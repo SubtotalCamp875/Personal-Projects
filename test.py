@@ -6,11 +6,7 @@ for i in range(len(x)):
     x[i] = x[i].split(':')
 print(x)
 print(x[1][0], x[1][1])
+print(len(x))
 """
-
-for i j in range(10):
-    print(i,j)
-
-
-
-y_{1}=g\left(x,10,10\right)+g\left(x,12,15\right)
+for i in range(2):
+    print(i)
