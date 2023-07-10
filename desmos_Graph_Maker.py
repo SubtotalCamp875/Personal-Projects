@@ -1,5 +1,5 @@
 def main():
-    func = input('Graph maker: 1, Help/Explanation: 2')
+    func = int(input('Graph maker = 1, Help/Explanation = 2: '))
     answer = ""
     match func:
         case 1:
@@ -8,10 +8,10 @@ def main():
                 values[i] = values[i].split(':')
             for i in range(len(values)):
                 answer += f'+g\left(x,{values[i][0]},{values[i][1]}\ right)'.replace(' ','')
+            print(answer)
 
 
-
-        case 2:
+        case 2: pass
 
 
 
