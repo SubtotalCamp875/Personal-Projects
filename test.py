@@ -1,1 +1,2 @@
-print(('\ng\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}').replace(' r','r').replace(' f','f'))
+x = ["3"]
+print(x[0].lower())
