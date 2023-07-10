@@ -10,7 +10,7 @@ def main():
             for i in range(len(values)):
                 values[i] = values[i].split(' ')
                 if values[i] in notes_list:
-                    values[i] = notes(values[i])
+                    values[i] = notes[values[i]]
                 answer += f'+g\left(x,{values[i][0]},{values[i][1]}\ right)'.replace(' ','')
             print(f'\n{answer}\n')
 
