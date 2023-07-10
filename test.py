@@ -4,3 +4,4 @@ print(x)
 for i in range(len(x)):
     x[i] = x[i].split(':')
 print(x)
+print(x[1][0], x[1][1])
