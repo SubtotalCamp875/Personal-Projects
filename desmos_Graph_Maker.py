@@ -2,7 +2,7 @@ def main():
     skip = False
     while True:
         if skip == False:
-            func = int(input('Graph maker = 1, Syntax Pairing = 2, Coordinate Pairs = 3, Conversion = 4, Differences = 5, Graph Shifting = 6, Help/Explanation = : '))
+            func = int(input('Graph maker = 1, Graph Shifting = 2, Syntax Pairing = 3, Coordinate Pairs = 4, Conversion = 5, Differences = 6, Help/Explanation = : '))
             answer = "y_{ 1}=".replace(' ','')
             steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
             notes = dict(zip(notes_list,steps))
@@ -29,28 +29,7 @@ def main():
                 print(f'\n{answer}\n')
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
 
-
-            case 2 | 'v': #Syntax Pairing
-                pair, x, y = '', input('Enter list of First value (1,2,3,4,5): ').replace(' ','').split(','), input('Enter list of Second value (ex. 1,2,3,4,5): ').replace(' ','').split(',')
-                for i in range(len(x)): pair += f'{x[i]} {y[i]},'
-                print(pair[0:-1])
-
-
-            case 3: #Coordinate Pairs
-                pair, x, y = '', input('Enter list of First value (ex. 1,2,3,4,5): ').replace(' ','').split(','), input('Enter list of Second value (ex. 1,2,3,4,5): ').replace(' ','').split(',')
-                for i in range(len(x)): print(f'{x[i]}, {y[i]}')
-
-
-            case 4: #Conversions
-                values = input('Enter a list of values (ex. 1,2,d#,e,5): ')
-                print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
-
-
-            case 5: #Differences
-                print(difference(convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(',')))
-
-
-            case 6:
+            case 2:
                 values, x, y = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing by inputing "v"): ').split(','), 0, 1
                 if values[0] == 'v':
                     skip, func = True, 'v'
@@ -73,6 +52,25 @@ def main():
                 print(f'\n{answer}\n')
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
 
+
+            case 3 | 'v': #Syntax Pairing
+                pair, x, y = '', input('Enter list of First value (1,2,3,4,5): ').replace(' ','').split(','), input('Enter list of Second value (ex. 1,2,3,4,5): ').replace(' ','').split(',')
+                for i in range(len(x)): pair += f'{x[i]} {y[i]},'
+                print(pair[0:-1])
+
+
+            case 4: #Coordinate Pairs
+                pair, x, y = '', input('Enter list of First value (ex. 1,2,3,4,5): ').replace(' ','').split(','), input('Enter list of Second value (ex. 1,2,3,4,5): ').replace(' ','').split(',')
+                for i in range(len(x)): print(f'{x[i]}, {y[i]}')
+
+
+            case 5: #Conversions
+                values = input('Enter a list of values (ex. 1,2,d#,e,5): ')
+                print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
+
+
+            case 6: #Differences
+                print(difference(convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(',')))
 
 
 
@@ -103,7 +101,6 @@ def difference(values):
         if i == 0: difference += f'{values[i]}, '
         if i != 0: difference += f'{int(values[i]) - int(values[i-1])}, '
     return(difference[0:-2])
-
 
 
 if __name__ == '__main__':
