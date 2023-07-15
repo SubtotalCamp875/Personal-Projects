@@ -1,3 +1,3 @@
-x = 'asdks'
-for i in range(len(x)):
-    print(i)
+x = 5
+x += -4
+print(x)
