@@ -32,11 +32,7 @@ def main():
             print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
 
         case 5: #Differences
-            values, difference = convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(','), ''
-            for i in range(len(values)):
-                if i == 0: difference += f'{values[i]}, '
-                if i != 0: difference += f'{int(values[i]) - int(values[i-1])}, '
-            print(difference[0:-2])
+            print(difference(convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(',')))
 
 
 
@@ -58,6 +54,16 @@ def convert(values, mode):
 
     if mode == 'l': return(letters_list[0:-2])
     if mode == 'n': return(numbers_list[0:-2])
+
+
+
+def difference(values):
+    difference = ''
+    for i in range(len(values)):
+        if i == 0: difference += f'{values[i]}, '
+        if i != 0: difference += f'{int(values[i]) - int(values[i-1])}, '
+    return(difference[0:-2])
+
 
 
 if __name__ == '__main__':
