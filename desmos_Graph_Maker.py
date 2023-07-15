@@ -49,8 +49,9 @@ def main():
             for i in range(len(values)):
                 if i+1 < shift[x]: pass
                 else: values[i][x] += change_amount[x]
-                if i+1 < shift[x]: pass
-                else: values[i][x] += change_amount[x]
+                if i+1 < shift[y]: pass
+                else: values[i][y] += change_amount[y]
+            print(values)
 
 
 
