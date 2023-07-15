@@ -6,7 +6,7 @@ def main():
 
     match func:
         case 1: #Graph Maker
-            values = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a, 10] or visit Syntax Pairing): ').split(',')
+            values = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing): ').split(',')
             for i in range(len(values)):
                 values[i] = values[i].split(' ')
                 #replace notes with number
