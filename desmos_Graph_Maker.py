@@ -48,9 +48,10 @@ def main():
             change_amount, shift = input('How much should the graph shift by (ex. [x=5, y=-3] [x=10, y=8])? ').replace('x=', '').replace('y=', '').replace(' ','').split(','), input('What coord should the shift start on (ex. x=3, y=7)? ').replace('x=', '').replace('y=', '').replace(' ','').split(',')
             for i in range(len(values)):
                 if i+1 < shift[x]: pass
-                else:
-                    values[i][x] += change_amount[x]
-                    
+                else: values[i][x] += change_amount[x]
+                if i+1 < shift[x]: pass
+                else: values[i][x] += change_amount[x]
+
 
 
 
