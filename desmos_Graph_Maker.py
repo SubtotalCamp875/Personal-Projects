@@ -48,6 +48,8 @@ def main():
 
             for i in range(len(values)):
                 values[i] = values[i].split(' ')
+                if values[i][x] in notes_list:
+                    
                 if i+1 < int(shift[x]): pass
                 else: values[i][x] = int(values[i][x]) + intn(change_amount[x])
                 if i+1 < int(shift[y]): pass
