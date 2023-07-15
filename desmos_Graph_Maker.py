@@ -32,8 +32,9 @@ def main():
             print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
 
         case 5: #Differences
-            values = input('Enter list of values (ex. 1,2,d#,e,5): ')
-            
+            values = convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n')
+            print(values)
+
 
 
 def convert(values, mode):
