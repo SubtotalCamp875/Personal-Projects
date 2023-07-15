@@ -1,6 +1,6 @@
 def main():
     skip = False
-    while true:
+    while True:
         if skip == False:
             func = int(input('Graph maker = 1, Syntax Pairing = 2, Coordinate Pairs = 3, Conversion = 4, Differences = 5, Graph Shifting = 6, Help/Explanation = : '))
             answer = "y_{ 1}=".replace(' ','')
@@ -12,8 +12,9 @@ def main():
         match func:
             case 1: #Graph Maker
                 values = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing by inputing "v"): ').split(',')
-                if values == 'v':
-                    skip, func = True, v
+                if values[0] == 'v':
+                    skip, func = True, 'v'
+                    print('Switching to Syntax pairing (2) now...\n')
                     continue
                 for i in range(len(values)):
                     values[i] = values[i].split(' ')
@@ -51,8 +52,9 @@ def main():
 
             case 6:
                 values, x, y = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing by inputing "v"): ').split(','), 0, 1
-                if values == 'v':
-                    skip, func = True, v
+                if values[0] == 'v':
+                    skip, func = True, 'v'
+                    print('Switching to Syntax pairing (2) now...\n')
                     continue
                 change_amount, shift = input('How much should the graph shift by (ex. [x=5, y=-3] [x=10, y=8])? ').replace('x=', '').replace('y=', '').replace(' ','').split(','), input('What coord should the shift start on (ex. x=3, y=7)? ').replace('x=', '').replace('y=', '').replace(' ','').split(',')
 
