@@ -1,5 +1,5 @@
 def main():
-    func = int(input('Graph maker = 1, Syntax Pairing = 2, Coordinate Pairs = 3, Conversion = 4, Differences = 5, Horizontl Shifting = 6, Help/Explanation = : '))
+    func = int(input('Graph maker = 1, Syntax Pairing = 2, Coordinate Pairs = 3, Conversion = 4, Differences = 5, Graph Shifting = 6, Help/Explanation = : '))
     answer = "y_{ 1}=".replace(' ','')
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
     notes = dict(zip(notes_list,steps))
@@ -44,14 +44,16 @@ def main():
 
         case 6:
             values, x, y = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing): ').split(','), 0, 1
-            for i in range(len(values)): values[i] = values[i].split(' ')
             change_amount, shift = input('How much should the graph shift by (ex. [x=5, y=-3] [x=10, y=8])? ').replace('x=', '').replace('y=', '').replace(' ','').split(','), input('What coord should the shift start on (ex. x=3, y=7)? ').replace('x=', '').replace('y=', '').replace(' ','').split(',')
+
             for i in range(len(values)):
+                values[i] = values[i].split(' ')
                 if i+1 < int(shift[x]): pass
                 else: values[i][x] = int(values[i][x]) + intn(change_amount[x])
                 if i+1 < int(shift[y]): pass
                 else: values[i][y] = int(values[i][y]) + intn(change_amount[y])
                 answer += f'+g\left(x,{values[i][x]},{values[i][y]}\ right)'.replace(' ','')
+
             print(f'\n{answer}\n')
             print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
 
