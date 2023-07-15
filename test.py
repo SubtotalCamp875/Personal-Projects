@@ -1,2 +1,3 @@
-for i in range(10):
+x = 'asdks'
+for i in range(len(x)):
     print(i)
