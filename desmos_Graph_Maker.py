@@ -8,6 +8,7 @@ def main():
             notes = dict(zip(notes_list,steps))
         skip = False
 
+
         match func:
             case 1: #Graph Maker
                 values = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing by inputing "v"): ').split(',')
@@ -49,7 +50,10 @@ def main():
 
 
             case 6:
-                values, x, y = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing): ').split(','), 0, 1
+                values, x, y = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing by inputing "v"): ').split(','), 0, 1
+                if values == 'v':
+                    skip, func = True, v
+                    continue
                 change_amount, shift = input('How much should the graph shift by (ex. [x=5, y=-3] [x=10, y=8])? ').replace('x=', '').replace('y=', '').replace(' ','').split(','), input('What coord should the shift start on (ex. x=3, y=7)? ').replace('x=', '').replace('y=', '').replace(' ','').split(',')
 
                 for i in range(len(values)):
