@@ -44,7 +44,7 @@ def main():
 
         case 6:
             values = input('Input values for n and t (ex. [n t,-n -t] [5 6,-a -10] or visit Syntax Pairing): ').split(',')
-            
+            shift, change_amount = 
 
 
 def convert(values, mode):
