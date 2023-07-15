@@ -32,8 +32,11 @@ def main():
             print(f'\n{convert(values, "l")}\n{convert(values, "n")}\n')
 
         case 5: #Differences
-            values = convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n')
-            print(values)
+            values, difference = convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(','), ''
+            for i in range(len(values)):
+                if i == 0: difference += f'{values[i]}, '
+                if i != 0: difference += f'{int(values[i]) - int(values[i-1])}, '
+            print(difference[0:-2])
 
 
 
