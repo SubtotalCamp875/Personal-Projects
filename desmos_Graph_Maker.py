@@ -2,7 +2,7 @@ def main():
     skip = False
     while True:
         if skip == False:
-            func = int(input('Graph maker = 1, Graph Shifting = 2, Syntax Pairing = 3, Coordinate Pairs = 4, Conversion = 5, Differences = 6, Help/Explanation = : '))
+            func = int(input('Graph maker (1), Graph Shifting (2), Syntax Pairing (3), Coordinate Pairs (4), Conversion (5), Differences (6), Help/Explanation (7): '))
             answer = "y_{ 1}=".replace(' ','')
             steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
             notes = dict(zip(notes_list,steps))
@@ -72,7 +72,8 @@ def main():
             case 6: #Differences
                 print(difference(convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(',')))
 
-
+            case 7:
+                print( )
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
