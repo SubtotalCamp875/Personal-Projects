@@ -54,6 +54,7 @@ def calculations(dice):
             chain = 1
             continue
         chain_list.append(chain)
+    chain_list.append(chain)
     print(chain_list)
 
 
