@@ -50,6 +50,7 @@ def calculations(dice):
             chain += 1
             if i != 4: continue
         elif dice[i] != dice[i-1] and chain > 1: chain = 1
+        print(i)
         chain_list.append(chain)
     print(chain_list)
 
