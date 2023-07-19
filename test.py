@@ -1,6 +1,5 @@
-import random
-
-dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
-print(dice)
-dice.sort()
-print(dice)
+x = [['1','2','3','4'],['2','3','4','5'],['3','4','5','6']]
+y = ['1','2','3','4','6']
+if str(x[0]).replace('[','').replace(']','') in str(y):
+    print(1)
+print(2)

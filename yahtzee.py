@@ -33,7 +33,7 @@ def main():
 
 
 def calculations(dice):
-    solutions, chain, chain_list, total, words_list = 'With the above dices, you can score with:\n', 1, [], 0, ['Aces','Twos','Threes','Fours','Fives','Sixes']
+    chain, chain_list, total, solutions, words_list, s_straights_list, l_straights_list = 1, [], 0, 'With the above dices, you can score with:\n', ['Aces','Twos','Threes','Fours','Fives','Sixes'], [['1','2','3','4'],['2','3','4','5'],['3','4','5','6']], [['1','2','3','4','5'],['2','3','4','5','6']]
 
 
     for i in range(7): #tests for numbers 1-6 and the total of that number
@@ -63,8 +63,16 @@ def calculations(dice):
     if 3 in chain_list: solution += f'Three of a kind for: {sum(dice)}\n'
     if 4 in chain_list: solution += f'Four of a kind for: {sum(dice)}\n'
     if chain_list == [3, 2] or chain_list == [2, 3]: solution += 'Full house for: 25\n'
-    #striaghts
+    for i in range(3):
+        if str(s_straights_list[0]).replace('[','').replace(']','') in str(dice): solution += 'Small straight for: 25\n'
+    for i in range(2):
+        if str(l_straights_list[0]).replace('[','').replace(']','') in str(dice): solution += 'Large straight for: 25\n'
     if 5 in chain_list: solution += 'Yahtzee for: 50\n'
+
+
+    return(solutions)
+
+
 
 def sum(dice):
     sum = 0
