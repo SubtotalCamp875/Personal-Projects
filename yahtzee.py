@@ -34,6 +34,8 @@ def main():
 
 def calculations(dice):
     solutions, chain, chain_list, total, words_list = 'With the above dices, you can score with:\n', 1, [], 0, ['Aces','Twos','Threes','Fours','Fives','Sixes']
+
+
     for i in range(7): #tests for numbers 1-6 and the total of that number
         if i == 0: continue
         for j in range(5):
@@ -56,7 +58,19 @@ def calculations(dice):
         chain_list.append(chain)
     if chain == 1:
         chain_list.append(chain)
-    print(chain_list)
+
+
+    if 3 in chain_list: solution += f'Three of a kind for: {sum(dice)}\n'
+    if 4 in chain_list: solution += f'Four of a kind for: {sum(dice)}\n'
+    if chain_list == [3, 2] or chain_list == [2, 3]: solution += 'Full house for: 25\n'
+    #striaghts
+    if 5 in chain_list: solution += 'Yahtzee for: 50\n'
+
+def sum(dice):
+    sum = 0
+    for i in range(len(dice)):
+        sum += dice[i]
+    return(sum)
 
 
 if __name__ == '__main__':
