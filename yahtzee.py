@@ -44,7 +44,7 @@ def calculations(dice):
             total = 0
 
 
-    for i in range(5):
+    for i in range(6):
         if i == 0: continue
         if dice[i] == dice[i-1]: chain += 1
         if dice[i] != dice[i-1] and chain > 1:
