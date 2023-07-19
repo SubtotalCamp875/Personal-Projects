@@ -1,6 +1,7 @@
 def main():
-    return(int('a'))
 
+    try: return(int('a'))
+    except ValueError: return(-1)
 
 x = main()
 
