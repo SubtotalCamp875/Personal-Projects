@@ -53,7 +53,7 @@ def calculations(dice):
             chain_list.append(chain)
             chain = 1
             continue
-        chain_list.append(chain)
+        if dice[i] != dice[i-1] and chain == 1: chain_list.append(chain)
     print(chain_list)
 
 
