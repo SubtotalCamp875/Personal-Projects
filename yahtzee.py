@@ -44,14 +44,14 @@ def calculations(dice):
             total = 0
 
 
-    for i in range(6):
+    for i in range(5):
         if i == 0: continue
         if dice[i] == dice[i-1]: chain += 1
-        if dice[i] != dice[i-1] and chain > 1:
+        elif dice[i] != dice[i-1] and chain > 1:
             chain_list.append(chain)
             chain = 1
         else: chain_list.append(chain)
-        print(chain_list)
+    print(chain_list)
 
 
 if __name__ == '__main__':
