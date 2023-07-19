@@ -52,9 +52,8 @@ def calculations(dice):
         if dice[i] != dice[i-1] and chain > 1:
             chain_list.append(chain)
             chain = 1
-        else:
-            print(i)
-            chain_list.append(chain)
+            continue
+        chain_list.append(chain)
     print(chain_list)
 
 
