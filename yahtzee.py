@@ -51,7 +51,7 @@ def calculations(dice):
             chain_list.append(chain)
             chain = 1
         else: chain_list.append(chain)
-    print(chain_list)
+        print(chain_list)
 
 
 if __name__ == '__main__':
