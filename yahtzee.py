@@ -33,7 +33,7 @@ def main():
 
 
 def calculations(dice):
-    chain, chain_list, total, solutions, words_list, s_straights_list, l_straights_list = 1, [], 0, 'With the above dices, you can score with:\n', ['Aces','Twos','Threes','Fours','Fives','Sixes'], [['1','2','3','4'],['2','3','4','5'],['3','4','5','6']], [['1','2','3','4','5'],['2','3','4','5','6']]
+    chain, chain_list, total, solutions, words_list, s_straights_list, l_straights_list = 1, [], 0, 'With the above dices, you can score with:\n', ['Aces','Twos','Threes','Fours','Fives','Sixes'], [[1, 2, 3, 4],[2, 3, 4, 5],[3, 4, 5, 6]], [[1 ,2 ,3 ,4 ,5 ],[2, 3, 4, 5, 6]]
 
 
     for i in range(7): #tests for numbers 1-6 and the total of that number
