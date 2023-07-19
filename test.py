@@ -1,7 +1,8 @@
 def main():
-    return ValueError
+    return(int('a'))
+
+
 x = main()
 
-if x == ValueError:
-    print(1)
+if x == ValueError: print(1)
 print(x)
