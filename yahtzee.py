@@ -18,7 +18,8 @@ def main():
                 for j in range(5):
                     if action[i] == dice[j]:
                         dice[j] = random.choice(range(6))+1
-                        action[i]
+                        del action[i]
+                        break
 
 
 
