@@ -17,7 +17,8 @@ def main():
             for i in range(len(action)):
                 for j in range(5):
                     if action[i] == dice[j]:
-                        
+                        dice[j] = random.choice(range(6))+1
+                        action[i]
 
 
 
