@@ -15,8 +15,9 @@ def main():
         else:
             action.replace(' ','').split(',')
             for i in range(len(action)):
-                if action[i] in dice:
-                    
+                for j in range(5):
+                    if action[i] == dice[j]:
+                        
 
 
 
