@@ -7,18 +7,17 @@ def main():
         if action == "?":
             print('\nType "n" when prompted for input to roll a new set of 5 dices\nor\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: please type the numbers ffrom smallest to largest in the syntax shown (with commas)\n')
 
-        if action == 'n':
+        elif action == 'n':
             dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
             dice.sort()
             print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
 
         else:
-            action.replace(' ','').split(',')
+            action = action.replace(' ','').split(',')
             for i in range(len(action)):
                 for j in range(5):
                     if int(action[i]) == dice[j]:
                         dice[j] = random.choice(range(6))+1
-                        del action[i]
                         break
             reroll -= 1
             print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
