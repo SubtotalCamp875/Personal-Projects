@@ -54,7 +54,8 @@ def calculations(dice):
             chain = 1
             continue
         chain_list.append(chain)
-    chain_list.append(chain)
+    if chain == 1:
+        chain_list.append(chain)
     print(chain_list)
 
 
