@@ -33,18 +33,21 @@ def main():
 
 
 def calculations(dice):
-    solutions, chain = 'With the above dices, you can score with:\n', 0
-    if '1' in dice: solutions += 'Aces\n'
-    if '2' in dice: solutions += 'Twos\n'
-    if '3' in dice: solutions += 'Threes\n'
-    if '4' in dice: solutions += 'Fours\n'
-    if '5' in dice: solutions += 'Fives\n'
-    if '6' in dice: solutions += 'Sixes\n'
+    solutions, chain, total, words_list = 'With the above dices, you can score with:\n', 0, 0, ['Aces','Twos','Threes','Fours','Fives','Sixes']
+    for i in range(7): #goes through numbers from 1-6
+        if i == 0: continue
+        for j in range(5):
+            if i == int(dice[j]):
+                total += i
+        solutions += f'{words_list[i-1]} for: {total}\n'
+        total = 0
+    return(solutions)
+'''
     for i in range(len(dice)):
-        if i == 0: pass
+        if i == 0: continue
         if dice[i] == dice[i-1]: chain += 1
         else: chain = 0
-
+'''
 
 if __name__ == '__main__':
     main()
