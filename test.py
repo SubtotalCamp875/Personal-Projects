@@ -1,2 +1,3 @@
-x = 0.5
-print(type(x))
+def main():
+    return(ValueError)
+print(main())
