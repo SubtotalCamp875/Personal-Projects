@@ -1,19 +1,31 @@
 import random
 
 def main():
-    action = input('("?" for help) Input: ')
+    while True:
+        action = input('("?" for help) Input: ')
 
-    if action == "?":
-        print('Type "n" when prompted for input to roll and new set of 5 dices or type the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6')
+        if action == "?":
+            print('\nType "n" when prompted for input to roll a new set of 5 dices\nor\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: please type the numbers ffrom smallest to largest in the syntax shown (with commas)\n')
 
-    if action == 'n':
-        print(f'======================\n{random.choice(range(6))+1})
+        if action == 'n':
+            dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
+            dice.sort()
+            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
+
+        else:
+            action.replace(' ','').split(',')
+            for i in range(len(action)):
+                if action[i] in dice:
+                    
+
+
+
+
 
 
 def calculations():
+    pass
 
 
-
-
-if __name__ == "__main()__":
+if __name__ == '__main__':
     main()
