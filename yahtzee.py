@@ -60,14 +60,14 @@ def calculations(dice):
         chain_list.append(chain)
 
 
-    if 3 in chain_list: solution += f'Three of a kind for: {sum(dice)}\n'
-    if 4 in chain_list: solution += f'Four of a kind for: {sum(dice)}\n'
-    if chain_list == [3, 2] or chain_list == [2, 3]: solution += 'Full house for: 25\n'
+    if 3 in chain_list: solutions += f'Three of a kind for: {sum(dice)}\n'
+    if 4 in chain_list: solutions += f'Four of a kind for: {sum(dice)}\n'
+    if chain_list == [3, 2] or chain_list == [2, 3]: solutions += 'Full house for: 25\n'
     for i in range(3):
-        if str(s_straights_list[0]).replace('[','').replace(']','') in str(dice): solution += 'Small straight for: 25\n'
+        if str(s_straights_list[0]).replace('[','').replace(']','') in str(dice): solutions += 'Small straight for: 25\n'
     for i in range(2):
-        if str(l_straights_list[0]).replace('[','').replace(']','') in str(dice): solution += 'Large straight for: 25\n'
-    if 5 in chain_list: solution += 'Yahtzee for: 50\n'
+        if str(l_straights_list[0]).replace('[','').replace(']','') in str(dice): solutions += 'Large straight for: 25\n'
+    if 5 in chain_list: solutions += 'Yahtzee for: 50\n'
 
 
     return(solutions)
