@@ -39,15 +39,16 @@ def calculations(dice):
         for j in range(5):
             if i == int(dice[j]):
                 total += i
-        solutions += f'{words_list[i-1]} for: {total}\n'
-        total = 0
-    return(solutions)
-'''
+        if total != 0:
+            solutions += f'{words_list[i-1]} for: {total}\n'
+            total = 0
+
+
     for i in range(len(dice)):
         if i == 0: continue
         if dice[i] == dice[i-1]: chain += 1
         else: chain = 0
-'''
+
 
 if __name__ == '__main__':
     main()
