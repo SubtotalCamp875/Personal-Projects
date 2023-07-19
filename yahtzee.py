@@ -45,9 +45,7 @@ def calculations(dice):
 
 
     for i in range(5): #stores the amount fo numbers that are in a row within a list then reset
-        if i == 0:
-            chain_list.append(chain)
-            continue
+        if i == 0: continue
         if dice[i] == dice[i-1]:
             chain += 1
             if i != 4: continue
