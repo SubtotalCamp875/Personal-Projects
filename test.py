@@ -1,9 +1,3 @@
-def main():
+import random
 
-    try: return(int('a'))
-    except ValueError: return(-1)
-
-x = main()
-
-if x == ValueError: print(1)
-print(x)
+print(random.choice(range(6))+1)
