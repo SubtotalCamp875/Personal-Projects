@@ -50,7 +50,8 @@ def calculations(dice):
         if dice[i] != dice[i-1] and chain > 1:
             chain_list.append(chain)
             chain = 1
-    chain_list.append(chain)
+        else: chain_list.append(chain)
+    print(chain_list)
 
 
 if __name__ == '__main__':
