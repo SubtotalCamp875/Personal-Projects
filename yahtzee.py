@@ -20,6 +20,8 @@ def main():
                         dice[j] = random.choice(range(6))+1
                         del action[i]
                         break
+            reroll -= 1
+            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
 
 
 
