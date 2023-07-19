@@ -33,7 +33,7 @@ def main():
 
 
 def calculations(dice):
-    solutions, chain, total, words_list = 'With the above dices, you can score with:\n', 0, 0, ['Aces','Twos','Threes','Fours','Fives','Sixes']
+    solutions, chain, chain_list, total, words_list = 'With the above dices, you can score with:\n', 1, [], 0, ['Aces','Twos','Threes','Fours','Fives','Sixes']
     for i in range(7): #goes through numbers from 1-6
         if i == 0: continue
         for j in range(5):
@@ -44,10 +44,13 @@ def calculations(dice):
             total = 0
 
 
-    for i in range(len(dice)):
+    for i in range(5):
         if i == 0: continue
         if dice[i] == dice[i-1]: chain += 1
-        else: chain = 0
+        if dice[i] != dice[i-1] and chain > 1:
+            chain_list.append(chain)
+            chain = 1
+    chain_list.append(chain)
 
 
 if __name__ == '__main__':
