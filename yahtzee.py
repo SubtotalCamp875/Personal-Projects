@@ -20,7 +20,7 @@ def main():
 
         elif action == 'e': break
         elif action == 's':
-            dice = input('input 5 numbers to act as your hand: ').replace(' ','').split(',')
+            dice, reroll = input('input 5 numbers to act as your hand: ').replace(' ','').split(','), 2
             print(Fore.MAGENTA + 'The dices are now set as:\n' + Fore.YELLOW + f'==================================\n{dice}\n==================================' + Fore.WHITE)
 
         else:
