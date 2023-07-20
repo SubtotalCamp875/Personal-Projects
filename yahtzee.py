@@ -31,7 +31,7 @@ def main():
                         break
             reroll -= 1
             dice.sort()
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n')
+            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
             time.sleep(1)
             print(f'==================================\n{dice}\n==================================')
             time.sleep(1)
