@@ -1,12 +1,9 @@
-import random
-from colorama import Fore, Style
+import random, time
 
 def main():
-    color = 1
     while True:
         action = input('("?" for help) Input: ')
-        if color >= 6: color = 1
-        
+
         if action == "?":
             print('\nType "n" when prompted for input to roll a new set of 5 dices\nor\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: Please type of the numbers using the syntax shown (with ocmmas). And randomness is random - which means you might end up having the same number. That is not a bug!\n')
 
@@ -14,10 +11,11 @@ def main():
         elif action == 'n':
             dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
             dice.sort()
-            set_color(color)
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
-            print(calculations(dice) + Style.RESET_ALL)
-            color += 1
+            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
+            time.sleep(1)
+            print(f'==================================\n{dice}\n==================================')
+            time.sleep(1)
+            print(calculations(dice))
 
         elif action == 'e': break
 
@@ -33,10 +31,11 @@ def main():
                         break
             reroll -= 1
             dice.sort()
-            set_color(color)
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
-            print(calculations(dice) + Style.RESET_ALL)
-            color += 1
+            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n')
+            time.sleep(1)
+            print(f'==================================\n{dice}\n==================================')
+            time.sleep(1)
+            print(calculations(dice))
 
 
 
@@ -89,14 +88,6 @@ def sum(dice):
     for i in range(len(dice)):
         sum += dice[i]
     return(sum)
-
-
-def set_color(color):
-    if color == 1: print(Fore.RED, end = '')
-    if color == 2: print(Fore.BLUE, end = '')
-    if color == 3: print(Fore.GREEN, end = '')
-    if color == 4: print(Fore.YELLOW, end = '')
-    if color == 5: print(Fore.MAGENTA, end = '')
 
 
 
