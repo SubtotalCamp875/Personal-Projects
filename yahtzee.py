@@ -1,5 +1,5 @@
 import random
-from colorama import fore
+from colorama import Fore
 
 def main():
     color = 1
@@ -15,8 +15,9 @@ def main():
         elif action == 'n':
             dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
             dice.sort()
-            print(Fore.RED + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
-            print(calculations(dice))
+            print(Fore.fore_list[color] + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
+            print(Fore.fore_list[color] + calculations(dice) + Style.RESET_ALL)
+            color += 1
 
         elif action == 'e': break
 
@@ -32,8 +33,9 @@ def main():
                         break
             reroll -= 1
             dice.sort()
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
-            print(calculations(dice))
+            print(Fore.fore_list[color] + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
+            print(Fore.fore_list[color] + calculations(dice) + Style.RESET_ALL)
+            color += 1
 
 
 
