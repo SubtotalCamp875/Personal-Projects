@@ -19,7 +19,9 @@ def main():
             print(Fore.GREEN + calculations(dice) + Fore.WHITE)
 
         elif action == 'e': break
-        elif action == 's': dice = input('input 5 numbers to act as your hand: ').replace(' ','').split(',')
+        elif action == 's':
+            dice = input('input 5 numbers to act as your hand: ').replace(' ','').split(',')
+            print(Fore.MAGENTA + 'The dices are now set as:\n' + Fore.YELLOW + f'==================================\n{dice}\n==================================' + Fore.WHITE)
 
         else:
             if reroll == 0:
