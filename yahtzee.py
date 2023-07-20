@@ -91,7 +91,7 @@ def calculations(dice):
 def sum(dice):
     sum = 0
     for i in range(len(dice)):
-        sum += dice[i]
+        sum += int(dice[i])
     return(sum)
 
 
