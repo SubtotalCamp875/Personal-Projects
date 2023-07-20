@@ -3,7 +3,7 @@ from colorama import fore
 
 def main():
     color = 1
-    fore_list = ['red','blue','yellow','green',']
+    fore_list = ['RED','BLUE','YELLOW','GREEN','MAGENTA']
     while True:
         action = input('("?" for help) Input: ')
         if color >= 5: color = 1
@@ -15,7 +15,7 @@ def main():
         elif action == 'n':
             dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
             dice.sort()
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
+            print(Fore.RED + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
             print(calculations(dice))
 
         elif action == 'e': break
