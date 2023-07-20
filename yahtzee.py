@@ -36,7 +36,7 @@ def main():
             time.sleep(1)
             print(Fore.YELLOW + f'==================================\n{dice}\n==================================')
             time.sleep(1)
-            print(Fore.GREEN + calculations(dice))
+            print(Fore.GREEN + calculations(dice) + Fore.WHITE)
             if reroll == 0: print(Fore.MAGENTA + 'This is your FINAL HAND' + Fore.WHITE)
 
 
