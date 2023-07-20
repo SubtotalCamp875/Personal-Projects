@@ -91,9 +91,9 @@ def calculations(dice):
 
 def sum(dice):
     sum = 0
-    for i in range(len(dice)):
-        sum += int(dice[i])
+    for i in range(len(dice)): sum += int(dice[i])
     return(sum)
+
 
 
 if __name__ == '__main__':
