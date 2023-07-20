@@ -16,7 +16,7 @@ def main():
             time.sleep(1)
             print(Fore.YELLOW + f'==================================\n{dice}\n==================================')
             time.sleep(1)
-            print(Fore.GREEN + calculations(dice) + Fore.WHITE)
+            print(Fore.GREEN + calculations(dice, reroll) + Fore.WHITE)
 
         elif action == 'e': break
 
@@ -36,10 +36,10 @@ def main():
             time.sleep(1)
             print(Fore.YELLOW + f'==================================\n{dice}\n==================================')
             time.sleep(1)
-            print(Fore.GREEN + calculations(dice) + Fore.WHITE)
+            print(Fore.GREEN + calculations(dice, reroll) + Fore.WHITE)
 
 
-def calculations(dice):
+def calculations(dice, reroll):
     chain, chain_list, total, solutions, words_list, s_straights_list, l_straights_list = 1, [], 0, 'With the above dices, you can score with:\n', ['Aces','Twos','Threes','Fours','Fives','Sixes'], [[1, 2, 3, 4],[2, 3, 4, 5],[3, 4, 5, 6]], [[1 ,2 ,3 ,4 ,5 ],[2, 3, 4, 5, 6]]
 
 
@@ -77,7 +77,7 @@ def calculations(dice):
     for i in range(2):
         if str(l_straights_list[i]).replace('[','').replace(']','') in str(dice): solutions += 'Large straight for: 40\n'
     if 5 in chain_list: solutions += 'Yahtzee for: 50\n'
-
+    if reroll == 0: solutions += 'Large straight for: 40\n'
 
     return(solutions)
 
