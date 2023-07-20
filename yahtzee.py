@@ -1,4 +1,5 @@
 import random, time
+from colorama import Fore
 
 def main():
     while True:
@@ -11,11 +12,11 @@ def main():
         elif action == 'n':
             dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
             dice.sort()
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
+            print(Fore.RED + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
             time.sleep(1)
-            print(f'==================================\n{dice}\n==================================')
+            print(Fore.YELLOW + f'==================================\n{dice}\n==================================')
             time.sleep(1)
-            print(calculations(dice))
+            print(Fore.GREEN + calculations(dice) + Fore.WHITE)
 
         elif action == 'e': break
 
@@ -31,12 +32,11 @@ def main():
                         break
             reroll -= 1
             dice.sort()
-            print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
+            print(Fore.RED + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
             time.sleep(1)
-            print(f'==================================\n{dice}\n==================================')
+            print(Fore.YELLOW + f'==================================\n{dice}\n==================================')
             time.sleep(1)
-            print(calculations(dice))
-
+            print(Fore.GREEN + calculations(dice) + Fore.WHITE)
 
 
 def calculations(dice):
