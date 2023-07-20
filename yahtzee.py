@@ -4,6 +4,7 @@ from colorama import Fore
 def main():
     while True:
         action = input('("?" for help) Input: ')
+        print(' ')
 
         if action == "?":
             print('\n-Type "n" when prompted for input to roll a new set of 5 dices\n-Type "e" to exit the code\n-Type "s" to set a dice roll of your choice\nAnd/Or\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: Please type of the numbers using the syntax shown (with ocmmas). Randomness is random - which means you might end up having the same number. That is not a bug!\n')
@@ -12,7 +13,7 @@ def main():
         elif action == 'n':
             dice, reroll = [random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1, random.choice(range(6))+1], 2
             dice.sort()
-            print(Fore.RED + f'\nYou rolled a set of dice. Rerolls remaining: {reroll}')
+            print(Fore.RED + f'You rolled a set of dice. Rerolls remaining: {reroll}')
             time.sleep(1)
             print(Fore.YELLOW + f'==================================\n{dice}\n==================================')
             time.sleep(1)
