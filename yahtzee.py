@@ -3,7 +3,7 @@ from colorama import Fore
 
 def main():
     while True:
-        action = input('("?" for help) Input: ')
+        action = input('("?" for help) Input/Reroll: ')
         print(' ')
 
         if action == "?":
@@ -22,6 +22,7 @@ def main():
         elif action == 'e': break
         elif action == 's':
             dice, reroll = input('input 5 numbers to act as your hand: ').replace(' ','').split(','), 2
+            dice.sort()
             print(Fore.MAGENTA + 'The dices are now set as:\n' + Fore.YELLOW + f'==================================\n{dice}\n==================================' + Fore.WHITE)
 
         else:
