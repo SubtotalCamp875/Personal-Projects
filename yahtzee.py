@@ -7,7 +7,7 @@ def main():
         print(' ')
 
         if action == "?":
-            print('\n-Type "n" when prompted for input to roll a new set of 5 dices\n-Type "e" to exit the code\n-Type "s" to set a dice roll of your choice\nAnd/Or\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: Please type of the numbers using the syntax shown (with ocmmas). Randomness is random - which means you might end up having the same number. That is not a bug!\n')
+            print('-Type "n" when prompted for input to roll a new set of 5 dices\n-Type "e" to exit the code\n-Type "s" to set a dice roll of your choice\nAnd/Or\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: Please type of the numbers using the syntax shown (with commas). Randomness is random - which means you might end up having the same number. That is not a bug!\n')
 
 
         elif action == 'n':
@@ -94,7 +94,6 @@ def sum(dice):
     for i in range(len(dice)):
         sum += int(dice[i])
     return(sum)
-
 
 
 if __name__ == '__main__':
