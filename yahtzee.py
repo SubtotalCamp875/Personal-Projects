@@ -3,6 +3,7 @@ from colorama import fore
 
 def main():
     color = 1
+    fore_list = ['red','blue','yellow','green',']
     while True:
         action = input('("?" for help) Input: ')
         if color >= 5: color = 1
@@ -18,6 +19,7 @@ def main():
             print(calculations(dice))
 
         elif action == 'e': break
+
         else:
             if reroll == 0:
                 print('You have already used both of your rerolls. Please create a new set of dice by typing "n" when propted for input.')
