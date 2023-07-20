@@ -6,7 +6,7 @@ def main():
     while True:
         action = input('("?" for help) Input: ')
         if color >= 5: color = 1
-        
+
         if action == "?":
             print('\nType "n" when prompted for input to roll a new set of 5 dices\nor\ntype the the numbers rolled to reroll them. For example, if you rolled 1,2,3,3,6 type "3,6" to roll a single 3 and the 6.\nNote: Please type of the numbers using the syntax shown (with ocmmas). And randomness is random - which means you might end up having the same number. That is not a bug!\n')
 
@@ -17,7 +17,7 @@ def main():
             print(f'\nYou rolled a set of dice. Rerolls remaining: {reroll}\n==================================\n{dice}\n==================================\n')
             print(calculations(dice))
 
-
+        elif action == 'e': break
         else:
             if reroll == 0:
                 print('You have already used both of your rerolls. Please create a new set of dice by typing "n" when propted for input.')
