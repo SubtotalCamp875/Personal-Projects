@@ -1,3 +1,6 @@
+from colorama import Fore
+import time
+
 def main():
     skip = False
     while True:
@@ -43,10 +46,8 @@ def main():
                         values[i][0] = notes[values[i][0].lower()]
                         #find difference between prev value and notes when notes is not the first value
                         if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
-                    if i+1 < int(shift[x]): pass
-                    else: values[i][x] = int(values[i][x]) + int(change_amount[x])
-                    if i+1 < int(shift[y]): pass
-                    else: values[i][y] = int(values[i][y]) + int(change_amount[y])
+                    if i+1 >= int(shift[x]): values[i][x] = int(values[i][x]) + int(change_amount[x])
+                    if i+1 >= int(shift[y]): values[i][y] = int(values[i][y]) + int(change_amount[y])
                     answer += f'+g\left(x,{values[i][x]},{values[i][y]}\ right)'.replace(' ','')
 
                 print(f'\n{answer}\n')
@@ -73,7 +74,16 @@ def main():
                 print(difference(convert(input('Enter list of values (ex. 1,2,d#,e,5): ').lower(), 'n').replace(' ','').split(',')))
 
             case 7:
-                print('About the )
+                print(Fore.GREEN+'\nAbout this project - The first version of this project was created when I, SubtotalCamp875, along with YackaDesmos wanted to create a Rickroll using Desmos Graphing Calculator. I then created this project to further optimize the code and features as it was easier to rewrite the code compared to modifying its whole i/o and syntax system. We also created our own discord server with the help of Playli750. The system also surports notes like a,a#,b,...,g,g# (calculated by Yacka). Note that the code is not perfect and might contain bugs and also requires the user to use the correct syntax or else it will raise an error. If you find any bugs or would like to discuss anything, Join the Discord Server!\n'+Fore.YELLOW+'The Original Video by SubtotalCamp875: '+Fore.BLUE+'https://youtu.be/JtP_3Jao910 \n'+Fore.YELLOW+'YackaDesmos Channel: '+Fore.BLUE+'https://www.youtube.com/@YackalipsDesmos/about \n'+Fore.YELLOW+'Playli750 channel: '+Fore.BLUE+'https://www.youtube.com/@playli750/about \n'+Fore.YELLOW+'The Desmos Graphing Server (Discord): '+Fore.BLUE+'https://discord.gg/rQrnMtJmsv \n')
+
+                time.sleep(2)
+                print(Fore.GREEN+'Mode 1 - The first mode, also the main mode, requires the syntax [n t,-n -t] [5 6,-a -10] where the n value is the change in height at the location for t (on the x coordinate). The input can be numbers, notes, negetives, or all the above.\n'+Fore.YELLOW+'So if n=5 and t=6, there will be a increase of 5 in height from (6,0) to (6,5) on a graph making it look like a backwards "L".\n'+Fore.RED+'The next set of numbers (seperated by the comma) increased at the next given x coordinate (t) but increase/decrease based in the previous value of 5.\n'+Fore.WHITE+'The mode also supports "v" which will automatically bring you to Mode 3 to help you create the syntax.\n')
+
+                time.sleep(2)
+                print(Fore.GREEN+'Mode 2 - Mode 2 is the same as Mode 1 in the sense that is ask you for the same inputs as Mode 1 and also supports an input of "v" but its main purpose is to shift the graph by a certain amount.\n'+Fore.YELLOW+'When asked the second question (How much should the graph shift by?) you are required to enter in the syntax of "x=5, y=-3" or "x=10, y=8" where it can be any number or note. The amount stated will be the amount the pionts on the graph shift by. If there was a piont at (1,0) and "x=3, y=0" then the result will be (4,0).\n'+Fore.RED+'The third questions (What coord should the shift start on?) requires the same syntax as question 2 BUT this time, the numbers define where the change in starting. The numbers are based on the pionts you gave and not the location on a graph. If you inputted pionts on (5,0), (6,5), (7,3), then if x=1, the change in x will start at (5,0) and also increases the x value of all pionts after.\n'+Fore.WHITE+'The mode also supports "v" which will automatically bring you to Mode 3 to help you create the syntax.\n')
+
+                time.sleep(2)
+                print(Fore.GREEN+'Mode 3'+Fore.RESET)
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']

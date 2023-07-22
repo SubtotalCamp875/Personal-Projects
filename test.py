@@ -1,3 +1,4 @@
-from colorama import Fore
-print(Fore.RED + 'hey')
-print(Fore.GREEN, end = '')
+import time
+print('Hello',
+      time.sleep(1),
+      'There!')
