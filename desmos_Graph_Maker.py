@@ -76,8 +76,6 @@ def main():
             case 7:
                 print(Fore.GREEN+'\nAbout this project - The first version of this project was created when I, SubtotalCamp875, along with YackaDesmos wanted to create a Rickroll using Desmos Graphing Calculator. I then created this project to further optimize the code and features as it was easier to rewrite the code compared to modifying its whole i/o and syntax system. We also created our own discord server with the help of Playli750! The system also surports notes like a,a#,b,...,g,g# (calculated by Yacka). Note that the code is not perfect and might contain bugs and also requires the user to use the correct syntax or else it will raise an error. If you find any bugs or would like to discuss anything, Join the Discord Server!\n'+Fore.YELLOW+'The Original Video by SubtotalCamp875: '+Fore.BLUE+'https://youtu.be/JtP_3Jao910 \n'+Fore.YELLOW+'YackaDesmos Channel: '+Fore.BLUE+'https://www.youtube.com/@YackalipsDesmos/about \n'+Fore.YELLOW+'Playli750 channel: '+Fore.BLUE+'https://www.youtube.com/@playli750/about \n'+Fore.YELLOW+'The Desmos Graphing Server (Discord): '+Fore.BLUE+'https://discord.gg/rQrnMtJmsv \n')
 
-
-
                 time.sleep(2)
                 print(Fore.GREEN+'Mode 1 - The first mode, also the main mode, requires the syntax [n t,-n -t] [5 6,-a -10] where the n value is the change in height at the location for t (on the x coordinate). The input can be numbers, notes, negetives, or all the above.\n'+Fore.YELLOW+'So if n=5 and t=6, there will be a increase of 5 in height from (6,0) to (6,5) on a graph making it look like a backwards "L".\n'+Fore.RED+'The next set of numbers (seperated by the comma) increased at the next given x coordinate (t) but increase/decrease based in the previous value of 5.\n'+Fore.WHITE+'The mode also supports "v" which will automatically bring you to Mode 3 to help you create the syntax.\n')
 
@@ -91,7 +89,13 @@ def main():
                 print(Fore.GREEN+'Mode 4 - The syntax for mode 4 is the same as mode 3 but instead of pairing them in the syntax for mode 1 and 2, it pairs them in the normal coordinate pairs where the first value of the first input is paired and seperated by a comma with the first value of the second input.'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 5 - The syntax for '+Fore.RESET)
+                print(Fore.GREEN+'Mode 5 - The input of mode 5 can be any number or note seperated by the comma and will output both the list of values in number and notes.'+Fore.RESET)
+
+                time.sleep(2)
+                print(Fore.GREEN+'Mode 6 - The syntax is the same as mode 5 but its output will be the difference between the values and the value before it. The first value will always stay the same as there is no value before it.'+Fore.RESET)
+
+                time.sleep(2)
+                print(Fore.GREEN+'Mode 7 - The most usful mode and also the easiest to use. It gives all the diffinition and explaination of all other modes in words that are clear or not. It has no inputs but sends the largest output. It takes 14 seconds for the entirety of the text to print even though it could take 1.'+Fore.RESET)
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
