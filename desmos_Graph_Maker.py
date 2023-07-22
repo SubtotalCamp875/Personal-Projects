@@ -95,7 +95,7 @@ def main():
                 print(Fore.GREEN+'Mode 6 - The syntax is the same as mode 5 but its output will be the difference between the values and the value before it. The first value will always stay the same as there is no value before it.'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 7 - The most usful mode and also the easiest to use. It gives all the diffinition and explaination of all other modes in words that are clear or not. It has no inputs but sends the largest output. It takes 14 seconds for the entirety of the text to print even though it could take just 1...'+Fore.RESET)
+                print(Fore.GREEN+'Mode 7 - The most usful mode and also the easiest to use. It gives all the diffinition and explaination of all other modes in words that are clear or not. It has no inputs but sends the largest output. It takes 14 seconds for the entirety of the text to print even though it could take just 1. And becuase of the time and coloring effects, the code gained an extra 21 lines when it could be all printed using 1 line'+Fore.RESET)
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
