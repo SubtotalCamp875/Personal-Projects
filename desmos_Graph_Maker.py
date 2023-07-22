@@ -88,7 +88,10 @@ def main():
                 print(Fore.GREEN+'Mode 3 - You can acess mode 3 by typing "v" as the input of the first question in both mode 1 and 2. The input requires a set of values seperated by commas (1,2,3,4,5) and can be numbers or notes. The second input must be the same length as the first.\n'+Fore.YELLOW+'The first list value is the variable n within the equation and the second inputted list of values represent variable t. The result of the pairing will result in the correct syntax that is required for mode 1 and 2.'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 4 - '+Fore.RESET)
+                print(Fore.GREEN+'Mode 4 - The syntax for mode 4 is the same as mode 3 but instead of pairing them in the syntax for mode 1 and 2, it pairs them in the normal coordinate pairs where the first value of the first input is paired and seperated by a comma with the first value of the second input.'+Fore.RESET)
+
+                time.sleep(2)
+                print(Fore.GREEN+'Mode 5 - '+Fore.RESET)
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
