@@ -91,7 +91,7 @@ def main():
                 print(Fore.GREEN+'Mode 4 - The syntax for mode 4 is the same as mode 3 but instead of pairing them in the syntax for mode 1 and 2, it pairs them in the normal coordinate pairs where the first value of the first input is paired and seperated by a comma with the first value of the second input.'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 5 - '+Fore.RESET)
+                print(Fore.GREEN+'Mode 5 - The syntax for '+Fore.RESET)
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
