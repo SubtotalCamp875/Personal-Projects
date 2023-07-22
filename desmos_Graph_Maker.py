@@ -83,19 +83,19 @@ def main():
                 print(Fore.GREEN+'Mode 2 - Mode 2 is the same as Mode 1 in the sense that is ask you for the same inputs as Mode 1 and also supports an input of "v" but its main purpose is to shift the graph by a certain amount.\n'+Fore.YELLOW+'When asked the second question (How much should the graph shift by?) you are required to enter in the syntax of "x=5, y=-3" or "x=10, y=8" where it can be any number or note. The amount stated will be the amount the pionts on the graph shift by. If there was a piont at (1,0) and "x=3, y=0" then the result will be (4,0).\n'+Fore.RED+'The third questions (What coord should the shift start on?) requires the same syntax as question 2 BUT this time, the numbers define where the change in starting. The numbers are based on the pionts you gave and not the location on a graph. If you inputted pionts on (5,0), (6,5), (7,3), then if x=1, the change in x will start at (5,0) and also increases the x value of all pionts after.\n'+Fore.WHITE+'The mode also supports "v" which will automatically bring you to Mode 3 to help you create the syntax.\n')
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 3 - You can acess mode 3 by typing "v" as the input of the first question in both mode 1 and 2. The input requires a set of values seperated by commas (1,2,3,4,5) and can be numbers or notes. The second input must be the same length as the first.\n'+Fore.YELLOW+'The first list value is the variable n within the equation and the second inputted list of values represent variable t. The result of the pairing will result in the correct syntax that is required for mode 1 and 2.'+Fore.RESET)
+                print(Fore.GREEN+'Mode 3 - You can acess mode 3 by typing "v" as the input of the first question in both mode 1 and 2. The input requires a set of values seperated by commas (1,2,3,4,5) and can be numbers or notes. The second input must be the same length as the first.\n'+Fore.YELLOW+'The first list value is the variable n within the equation and the second inputted list of values represent variable t. The result of the pairing will result in the correct syntax that is required for mode 1 and 2.\n'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 4 - The syntax for mode 4 is the same as mode 3 but instead of pairing them in the syntax for mode 1 and 2, it pairs them in the normal coordinate pairs where the first value of the first input is paired and seperated by a comma with the first value of the second input.'+Fore.RESET)
+                print(Fore.GREEN+'Mode 4 - The syntax for mode 4 is the same as mode 3 but instead of pairing them in the syntax for mode 1 and 2, it pairs them in the normal coordinate pairs where the first value of the first input is paired and seperated by a comma with the first value of the second input.\n'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 5 - The input of mode 5 can be any number or note seperated by the comma and will output both the list of values in number and notes.'+Fore.RESET)
+                print(Fore.GREEN+'Mode 5 - The input of mode 5 can be any number or note seperated by the comma and will output both the list of values in number and notes.\n'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 6 - The syntax is the same as mode 5 but its output will be the difference between the values and the value before it. The first value will always stay the same as there is no value before it.'+Fore.RESET)
+                print(Fore.GREEN+'Mode 6 - The syntax is the same as mode 5 but its output will be the difference between the values and the value before it. The first value will always stay the same as there is no value before it.\n'+Fore.RESET)
 
                 time.sleep(2)
-                print(Fore.GREEN+'Mode 7 - The most usful mode and also the easiest to use. It gives all the diffinition and explaination of all other modes in words that are clear or not. It has no inputs but sends the largest output. It takes 14 seconds for the entirety of the text to print even though it could take just 1. And becuase of the time and coloring effects, the code gained an extra 21 lines when it could be all printed using 1 line'+Fore.RESET)
+                print(Fore.GREEN+'Mode 7 - The most usful mode and also the easiest to use. It gives all the diffinition and explaination of all other modes in words that are clear or not. It has no inputs but sends the largest output. It takes 14 seconds for the entirety of the text to print even though it could take just 1. And becuase of the time and coloring effects, the code gained an extra 21 lines when it could be all printed using 1 line\n'+Fore.RESET)
 
 def convert(values, mode):
     steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
