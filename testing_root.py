@@ -10,7 +10,7 @@ def main():
         else:
             total += 1
             continue
-    print(f'{Total}/25')
+    print(f'{total}/25')
 
 if __name__ == '__main__':
     main()
