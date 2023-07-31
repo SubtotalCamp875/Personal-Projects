@@ -6,22 +6,24 @@ def main():
     while True:
         if skip == False:
             func = int(input('Graph maker (1), Graph Shifting (2), Syntax Pairing (3), Coordinate Pairs (4), Conversion (5), Differences (6), Help/Explanation (7): '))
-            answer, current = "y_{ 1}=".replace(' ',''), 0
+            answer = "y_{ 1}=".replace(' ','')
             steps, notes_list  = ['0','1','2','3','4','5','6','7','8','9','10','11','12'], ['e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b', 'c', 'c#', 'd', 'd#', 'e2']
             notes = dict(zip(notes_list,steps))
         skip = False
-
+        current = 0
 
         match func:
             case 1: #Graph Maker
                 values = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(',')
+
                 if values[0] == 'v':
                     skip, func = True, 'v'
                     print('Switching to Syntax pairing (2) now...\n')
                     continue
+
                 for i in range(len(values)):
                     values[i] = values[i].split(' ')
-                    if values[i][0] not in notes_list: current += values[i][0]
+                    if values[i][0].lower() not in notes_list: current += int(values[i][0])
 
                     #replace notes with number in 2d array
                     if values[i][0].lower() in notes_list:
