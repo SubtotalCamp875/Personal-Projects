@@ -14,7 +14,7 @@ def main():
 
         match func:
             case 1: #Graph Maker
-                values = input('Input values for n and t (ex. [n t,-n t] [5 6,-a 10] or visit Syntax Pairing by inputing "v"): ').split(',')
+                values = input('Input values for n and t (ex. [n t,-n t] [5 6,a 10] or visit Syntax Pairing by inputing "v"): ').split(',')
                 if values[0] == 'v':
                     skip, func = True, 'v'
                     print('Switching to Syntax pairing (2) now...\n')
@@ -23,7 +23,7 @@ def main():
                     values[i] = values[i].split(' ')
 
                     #replace notes with number in 2d array
-                    if values[i][0].lower() in notes_list:
+                    if values[i][0].lower().replace('-','') in notes_list:
                         values[i][0] = notes[values[i][0].lower()]
                         #find difference between prev value and notes when notes is not the first value
                         if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
