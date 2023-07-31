@@ -14,7 +14,7 @@ def main():
 
         match func:
             case 1: #Graph Maker
-                values = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').split(',')
+                values = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(',')
                 if values[0] == 'v':
                     skip, func = True, 'v'
                     print('Switching to Syntax pairing (2) now...\n')
@@ -33,7 +33,7 @@ def main():
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
 
             case 2:
-                values, x, y = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').split(','), 0, 1
+                values, x, y = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(','), 0, 1
                 if values[0] == 'v':
                     skip, func = True, 'v'
                     print('Switching to Syntax pairing (2) now...\n')
