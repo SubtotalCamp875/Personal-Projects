@@ -47,7 +47,7 @@ def main():
                         #find difference between prev value and notes when notes is not the first value
                         if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
                     if i+1 >= int(shift[x]): values[i][x] = int(values[i][x]) + int(change_amount[x])
-                    if i+1 >= int(shift[y]): values[i][y] = int(values[i][y]) + int(change_amount[y])
+                    if i+1 >= float(shift[y]): values[i][y] = float(values[i][y]) + float(change_amount[y])
                     answer += f'+g\left(x,{values[i][x]},{values[i][y]}\ right)'.replace(' ','')
 
                 print(f'\n{answer}\n')
