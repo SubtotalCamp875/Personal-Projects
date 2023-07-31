@@ -7,7 +7,7 @@ def main():
         if skip == False:
             func = int(input('Graph maker (1), Graph Shifting (2), Syntax Pairing (3), Coordinate Pairs (4), Conversion (5), Differences (6), Help/Explanation (7): '))
             answer = "y_{ 1}=".replace(' ','')
-            steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['d', 'd#', 'e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b', 'b#', 'c', 'c#']
+            steps, notes_list  = ['10','11','12','0','1','2','3','4','5','6','7','8','9'], ['d', 'd#', 'e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b', 'b#', 'c', 'c#']
             notes = dict(zip(notes_list,steps))
         skip = False
 
