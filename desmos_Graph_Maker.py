@@ -32,6 +32,7 @@ def main():
                 print(f'\n{answer}\n')
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
                 print(values)
+
             case 2:
                 values, x, y = input('Input values for n and t (ex. [n t,-n t] [5 6,-a 10] or visit Syntax Pairing by inputing "v"): ').split(','), 0, 1
                 if values[0] == 'v':
@@ -98,7 +99,7 @@ def main():
                 print(Fore.GREEN+'Mode 7 - The most usful mode and also the easiest to use. It gives all the diffinition and explaination of all other modes in words that are clear or not. It has no inputs but sends the largest output. It takes 14 seconds for the entirety of the text to print even though it could take just 1. And becuase of the time and coloring effects, the code gained an extra 21 lines when it could be all printed using 1 line\n'+Fore.RESET)
 
 def convert(values, mode):
-    steps, notes_list  = ['10','11','12','13','1','2','3','4','5','6','7','8','9'], ['a', 'a#', 'b', 'b#', 'c', 'c#', 'd', 'd#', 'e', 'f', 'f#', 'g', 'g#']
+    steps, notes_list  = ['0','1','2','3','4','5','6','7','8','9','10','11','12'], ['e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b', 'c', 'c#', 'd', 'd#', 'e2']
     notes, numbers = dict(zip(notes_list,steps)), dict(zip(steps,notes_list))
     values = values.replace(' ','').split(',')
     numbers_list, letters_list = '', ''
