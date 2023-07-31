@@ -6,11 +6,10 @@ def main():
     while True:
         if skip == False:
             func = int(input('Graph maker (1), Graph Shifting (2), Syntax Pairing (3), Coordinate Pairs (4), Conversion (5), Differences (6), Help/Explanation (7): '))
-            answer = "y_{ 1}=".replace(' ','')
+            answer, current = "y_{ 1}=".replace(' ',''), 0
             steps, notes_list  = ['0','1','2','3','4','5','6','7','8','9','10','11','12'], ['e', 'f', 'f#', 'g', 'g#', 'a', 'a#', 'b', 'c', 'c#', 'd', 'd#', 'e2']
             notes = dict(zip(notes_list,steps))
         skip = False
-        current = 0
 
         match func:
             case 1: #Graph Maker
