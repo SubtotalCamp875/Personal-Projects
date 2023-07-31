@@ -31,7 +31,7 @@ def main():
 
                 print(f'\n{answer}\n')
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
-
+                print(values)
             case 2:
                 values, x, y = input('Input values for n and t (ex. [n t,-n t] [5 6,-a 10] or visit Syntax Pairing by inputing "v"): ').split(','), 0, 1
                 if values[0] == 'v':
