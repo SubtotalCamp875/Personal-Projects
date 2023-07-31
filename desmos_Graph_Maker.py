@@ -29,7 +29,7 @@ def main():
                     if values[i][0].lower() in notes_list:
                         values[i][0] = notes[values[i][0].lower()]
                         #find difference between prev value and notes when notes is not the first value
-                        if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
+                        if i > 0: values[i][0] = int(values[i][0]) - current
                     answer += f'+g\left(x,{values[i][0]},{values[i][1]}\ right)'.replace(' ','')
 
                 print(f'\n{answer}\n')
@@ -45,12 +45,15 @@ def main():
 
                 for i in range(len(values)):
                     values[i] = values[i].split(' ')
+                    if values[i][0].lower() not in notes_list: current += int(values[i][0])
+
+                    #replace notes with number in 2d array
                     if values[i][0].lower() in notes_list:
                         values[i][0] = notes[values[i][0].lower()]
                         #find difference between prev value and notes when notes is not the first value
-                        if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
-                    #if i+1 >= int(shift[x]): values[i][x] = int(values[i][x]) + int(change_amount[x])
-                    #if i+1 >= int(shift[y]): values[i][y] = float(values[i][y]) + float(change_amount[y])
+                        if i > 0: values[i][0] = int(values[i][0]) - current
+                    if i+1 >= int(shift[x]): values[i][x] = int(values[i][x]) + int(change_amount[x])
+                    if i+1 >= int(shift[y]): values[i][y] = float(values[i][y]) + float(change_amount[y])
                     answer += f'+g\left(x,{values[i][x]},{values[i][y]}\ right)'.replace(' ','')
 
                 print(f'\n{answer}\n')
