@@ -6,6 +6,7 @@ def main():
         value, power = random.choice(range(1,10)), random.choice(range(2,4))
         answer = input(f'{value}^{power} = ')
         if answer == "e": break
+        if innumberic(answer) == False: print(f'{value}^{power} = {value**power}')
         if int(answer) == value**power:
             total += 1
             continue
