@@ -23,7 +23,7 @@ def main():
                     values[i] = values[i].split(' ')
 
                     #replace notes with number in 2d array
-                    if values[i][0].lower().replace('-','') in notes_list:
+                    if values[i][0].lower() in notes_list:
                         values[i][0] = notes[values[i][0].lower()]
                         #find difference between prev value and notes when notes is not the first value
                         if i > 0: values[i][0] = int(values[i][0]) - int(values[i-1][0])
