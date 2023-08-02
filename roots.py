@@ -1,6 +1,6 @@
 def main():
-    for i in range(3):
-        for j in range(10): print(f'{j} = {j**(i+1)}')
+    for i in range(2):
+        for j in range(20): print(f'{j} = {j**(i+2)}')
         sep()
 
 def sep(): print('============')
