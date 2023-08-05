@@ -55,6 +55,7 @@ def main():
                         if i > 0:
                             values[i][0] = int(values[i][0]) - current
                             current += int(values[i][0])
+                    print(values[i],change_amount[x],change_amount[y])
                     if i+1 >= int(shift[x]): values[i][x] =  int(values[i][x]) + int(change_amount[x])
                     if i+1 >= int(shift[y]): values[i][y] = float(values[i][y]) + float(change_amount[y])
                     print(values[i],change_amount[x],change_amount[y])
