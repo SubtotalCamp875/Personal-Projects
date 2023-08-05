@@ -13,7 +13,7 @@ def main():
 
         match func:
             case 1: #Graph Maker
-                values = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(',')
+                values = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').strip().split(',')
 
                 if values[0] == 'v':
                     skip, func = True, 'v'
@@ -37,16 +37,15 @@ def main():
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
 
             case 2:
-                values, x, y = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(','), 1, 0
+                values, x, y = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').strip().split(','), 1, 0
                 if values[0] == 'v':
                     skip, func = True, 'v'
                     print('Switching to Syntax pairing (2) now...\n')
                     continue
-                change_amount, shift = input('How much should the graph shift by (ex. [y=5, x=-3] [y=10, x=8])? ').replace('[','').replace(']','').replace('x=', '').replace('y=', '').replace(' ','').split(','), input('What coord should the shift start on (ex. y=3, x=7)? ').replace('[','').replace(']','').replace('x=', '').replace('y=', '').replace(' ','').split(',')
+                change_amount, shift = input('How much should the graph shift by (ex. [y=5, x=-3] [y=10, x=8])? ').replace('[','').replace(']','').replace('x=', '').replace('y=', '').replace(' ','').strip().split(','), input('What coord should the shift start on (ex. y=3, x=7)? ').replace('[','').replace(']','').replace('x=', '').replace('y=', '').replace(' ','').strip().split(',')
 
                 for i in range(len(values)):
                     values[i] = values[i].split(' ')
-                    print(values[i])
                     if values[i][0].lower() not in notes_list: current += int(values[i][0])
 
                     #replace notes with number in 2d array
@@ -65,7 +64,7 @@ def main():
 
 
             case 3 | 'v': #Syntax Pairing
-                pair, x, y = '', input('Enter list of First value (1,2,3,4,5): ').replace(' ','').split(','), input('Enter list of Second value (ex. 1,2,3,4,5): ').replace(' ','').split(',')
+                pair, x, y = '', input('Enter list of First value (1,2,3,4,5): ').replace(' ','').strip().split(','), input('Enter list of Second value (ex. 1,2,3,4,5): ').replace(' ','').split(',')
                 for i in range(len(x)): pair += f'{x[i]} {y[i]},'
                 print(pair[0:-1])
 
