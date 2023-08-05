@@ -46,6 +46,7 @@ def main():
 
                 for i in range(len(values)):
                     values[i] = values[i].split(' ')
+                    print(values[i])
                     if values[i][0].lower() not in notes_list: current += int(values[i][0])
 
                     #replace notes with number in 2d array
