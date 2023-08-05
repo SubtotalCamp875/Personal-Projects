@@ -37,7 +37,7 @@ def main():
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
 
             case 2:
-                values, x, y = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(','), 0, 1
+                values, x, y = input('Input values for n and t (ex. [n t,-n t.0] [5 6,a 10.5] or visit Syntax Pairing by inputing "v"): ').replace('[','').replace(']','').split(','), 1, 0
                 if values[0] == 'v':
                     skip, func = True, 'v'
                     print('Switching to Syntax pairing (2) now...\n')
@@ -57,7 +57,7 @@ def main():
                             current += int(values[i][0])
                     if i+1 >= int(shift[x]): values[i][x] = int(values[i][x]) + int(change_amount[x])
                     if i+1 >= int(shift[y]): values[i][y] = float(values[i][y]) + float(change_amount[y])
-                    answer += f'+g\left(x,{values[i][x]},{values[i][y]}\ right)'.replace(' ','')
+                    answer += f'+g\left(x,{values[i][y]},{values[i][x]}\ right)'.replace(' ','')
 
                 print(f'\n{answer}\n')
                 print(('g\left(x,n,t\ '+'right)\ =\ \ '+'frac{n}{1+e^{60\left(-x+t\ '+'right)}}\n').replace(' r','r').replace(' f','f'))
