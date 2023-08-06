@@ -9,6 +9,7 @@ def decode(value, all):
         if value[i].isnumeric() == True: answer += ' '
         else: answer += f'{all[value[i]]}'
     print(f'{value} = {answer}')
+        
 
 
 decode('jSHRt6QbkZY', all)
