@@ -1,1 +1,2 @@
-num = []
+
+dict(zip(,range(52)))
