@@ -9,12 +9,14 @@ def decode(value, all):
         if value[i].isnumeric() == True: answer += ' '
         else: answer += f'{all[value[i]]}'
     print(f'{value} = {answer}')
-        
 
 
+print(all)
 decode('jSHRt6QbkZY', all)
 decode('North', all)
 decode('South', all)
 decode('East', all)
 decode('West', all)
 decode('SHRZY', all)
+decode('TEU',all)
+decode('teu',all)
