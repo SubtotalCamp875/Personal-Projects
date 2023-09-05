@@ -1,3 +1,5 @@
+
+"""
 import string
 
 all = dict(zip(string.ascii_letters,range(53)))
@@ -20,3 +22,7 @@ decode('West', all)
 decode('SHRZY', all)
 decode('TEU',all)
 decode('teu',all)
+"""
+
+x = []
+print(len(x))
