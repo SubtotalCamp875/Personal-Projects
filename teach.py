@@ -6,6 +6,11 @@ elif
 else
 match case
 
+and
+or
+in [], "", a
+not
+
 (x==x) x==x
 
 int
@@ -33,6 +38,14 @@ colorama, math, time, sys
 fucntion
 def main()
 main()
+
+upper()
+lower()
+capitalize()
+replace())
+strip()
+isnumeric()
+isal
 
 continue
 pass
