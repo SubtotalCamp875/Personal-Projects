@@ -1,6 +1,7 @@
 if
 elif
 else
+match case
 
 int
 str
@@ -14,5 +15,18 @@ print("") or print('')
 operations
 +, -, *, **, /, //, ==, x=
 
-libraries
 
+while
+for i in range
+
+
+libraries / imports
+
+fucntion
+def main(): pass
+main()
+
+continue
+pass
+break
+return
