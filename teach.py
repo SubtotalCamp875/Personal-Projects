@@ -1,4 +1,6 @@
 """
+#comments
+
 if
 elif
 else
@@ -39,4 +41,9 @@ return
 
 len()
 
+if__name__ == '__main__':
+
+\n new line
+\t tab
 """
+
