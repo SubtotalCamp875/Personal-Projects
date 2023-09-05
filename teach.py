@@ -1,6 +1,13 @@
 """
 #comments
 
+int
+str
+float
+list
+dict
+fstr
+
 if
 elif
 else
@@ -13,13 +20,6 @@ not
 
 (x==x) x==x
 
-int
-str
-float
-list
-dict
-fstr
-
 input()
 print("") or print('')
 return
@@ -30,14 +30,10 @@ operations
 
 while
 for i in range():
-
+indexs
 
 libraries / imports
 colorama, math, time, sys
-
-fucntion
-def main()
-main()
 
 upper()
 lower()
@@ -45,7 +41,7 @@ capitalize()
 replace())
 strip()
 isnumeric()
-isal
+isalpha()
 
 continue
 pass
@@ -53,6 +49,10 @@ break
 return
 
 len()
+
+fucntion
+def main()
+main()
 
 if__name__ == '__main__':
 
