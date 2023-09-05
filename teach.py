@@ -28,6 +28,14 @@ operations
 +, -, *, **, /, //, ==, x=
 
 
+concatanate
+str + str
+str("int") + str("int")
+str * "int"
+(a, b)
+(f'any {any} any")
+
+
 while
 for i in range():
 indexs
@@ -42,6 +50,7 @@ replace())
 strip()
 isnumeric()
 isalpha()
+split()
 
 continue
 pass
