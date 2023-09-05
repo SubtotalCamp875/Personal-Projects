@@ -49,7 +49,7 @@ for i in range():
 indexs
 
 libraries / imports
-colorama, math, time, sys
+colorama, math, time, random, 
 
 upper()
 lower()
