@@ -7,6 +7,14 @@ float
 list
 dict
 fstr
+True
+False
+
+"errors"
+IndexError
+EOFError
+TypeError
+SyntaxEror
 
 if
 elif
