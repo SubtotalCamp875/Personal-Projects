@@ -5,6 +5,7 @@ else
 match case
 
 (x==x) x==x
+
 int
 str
 float
@@ -21,7 +22,7 @@ operations
 
 
 while
-for i in range
+for i in range():
 
 
 libraries / imports
