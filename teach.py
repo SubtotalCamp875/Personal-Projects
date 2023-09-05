@@ -4,6 +4,7 @@ elif
 else
 match case
 
+(x==x) x==x
 int
 str
 float
