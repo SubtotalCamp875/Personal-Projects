@@ -1,3 +1,4 @@
+"""
 if
 elif
 else
@@ -22,6 +23,7 @@ for i in range
 
 libraries / imports
 
+
 fucntion
 def main(): pass
 main()
@@ -30,3 +32,5 @@ continue
 pass
 break
 return
+
+"""
