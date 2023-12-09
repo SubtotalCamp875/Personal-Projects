@@ -1,2 +1,4 @@
-x = float(1)
-print(x)
+try: import pygame
+except ModuleNotFoundError: print('go downlowd pygame')
+
+x = 'as'
