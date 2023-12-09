@@ -1,4 +1,2 @@
-try: import pygame
-except ModuleNotFoundError: print('go downlowd pygame')
-
-x = 'as'
+n = int(input("How many sheeps? "))
+for i in range(n): print('🐑'*n)
