@@ -148,8 +148,8 @@ def main():
 
     for i in range(len(itemList)):
 
-        armorValue, kbResValue, armorValue = '', '', ''
-        while armorValue == '': armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
+        armorValue, kbResValue, armorToughnessValue = '', '', ''
+        while armorValue. == '': armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
         while kbResValue == '': kbResValue = input(f'Set a generic kb resistance value for {itemList[i]}: ')
         while armorToughnessValue == '': armorToughnessValue = input(f'Set a generic toughness value for {itemList[i]}: ')
 
