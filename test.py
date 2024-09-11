@@ -161,9 +161,9 @@ def main():
 
         finalOutput.append(f'
     function changeArmor(item as IItemStack, armor as double, toughness as double, resistance as double) as void {
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.{armorSlot}>, {armorValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, {kbResValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, {armorToughnessValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
 }')
 
     for i in range(len(finalOutput)): print(finalOutput[i])
