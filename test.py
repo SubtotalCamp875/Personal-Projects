@@ -1,8 +1,7 @@
 def main():
     itemList = [
         "knightquest:apple_helmet",
-        "knightquest:apple_chestplate"]
-    """
+        "knightquest:apple_chestplate",
         "knightquest:apple_leggings",
         "knightquest:apple_boots",
         "knightquest:bamboo_blue_helmet",
@@ -142,8 +141,8 @@ def main():
         "knightquest:skulk_helmet",
         "knightquest:skulk2_helmet",
         "knightquest:skulk3_helmet",
-        "knightquest:skulk4_helmet",
-    """
+        "knightquest:skulk4_helmet"
+    ]
 
     finalOutput = []
 
