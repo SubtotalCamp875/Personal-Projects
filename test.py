@@ -159,7 +159,12 @@ def main():
         elif 'leggings' in itemList[i]: armorSlot, uuid = 'legs', 'd8499b04-0e66-4726-ab29-64469d734e0d'
         elif 'boots' in itemList[i]: armorSlot, uuid = 'feet', '845db27c-c624-495f-8c9f-6020a9a58b6b'
 
-        finalOutput.append(f'<item:{itemList[i]}>.anyDamage().addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "{uuid}", "New Armor", {armorValue}, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:{armorSlot}>]).addGlobalAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, "{uuid}", "New Armor", {kbResValue}, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:{armorSlot}>]).addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "{uuid}", "New Armor", {armorToughnessValue}, AttributeOperation.ADDITION, [<constant:minecraft:equipmentslot:{armorSlot}>]);')
+        finalOutput.append(f'
+    function changeArmor(item as IItemStack, armor as double, toughness as double, resistance as double) as void {
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+}')
 
     for i in range(len(finalOutput)): print(finalOutput[i])
 
