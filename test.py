@@ -151,9 +151,9 @@ def main():
     for i in range(len(itemList)):
 
         armorValue, kbResValue, armorToughnessValue = '', '', ''
-        while armorValue.isdigit() == False: armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
-        while kbResValue.isdigit() == False: kbResValue = input(f'Set a generic kb resistance value for {itemList[i]}: ')
-        while armorToughnessValue.isdigit() == False: armorToughnessValue = input(f'Set a generic toughness value for {itemList[i]}: ')
+        armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
+        kbResValue = input(f'Set a generic kb resistance value for {itemList[i]}: ')
+        armorToughnessValue = input(f'Set a generic toughness value for {itemList[i]}: ')
         print('\n')
 
         if 'helmet' in itemList[i]: armorSlot, uuid = 'head', '2ad3f246-fee1-4e67-b886-69fd380bb150'
