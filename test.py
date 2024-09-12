@@ -144,7 +144,7 @@ def main():
         "knightquest:skulk4_helmet"
     ]
 
-    finalOutput = []
+    finalOutput, changeArmorFunction = [], []
 
 
     for i in range(len(itemList)):
@@ -161,8 +161,12 @@ def main():
         elif 'boots' in itemList[i]: armorSlot, uuid = 'feet', '845db27c-c624-495f-8c9f-6020a9a58b6b'
 
         finalOutput.append(f'item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:{itemList[i]}>, {armorValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);\nitem.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:{itemList[i]}>, {kbResValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);\nitem.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:{itemList[i]}>, {armorToughnessValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);')
+        changeArmorFunction.append(f'changeArmor(<item:knightquest:apple_helmet>, {armorValue}, {armorToughnessValue}, {kbResValue});')
+
 
     for i in range(len(finalOutput)): print(finalOutput[i])
+    for i in range(len(finalOutput)): print(changeArmorFunction[i])
+
 
 
 
