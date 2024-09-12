@@ -168,3 +168,18 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+
+
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:{itemList[i]}>, {armorValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
+
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:{itemList[i]}>, {kbResValue}, <constant:minecraft:attribute/
+    operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
+
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:{itemList[i]}>, {armorToughnessValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
