@@ -3,7 +3,8 @@ def main():
         "knightquest:apple_helmet",
         "knightquest:apple_chestplate",
         "knightquest:apple_leggings",
-        "knightquest:apple_boots",
+        "knightquest:apple_boots"]
+    """
         "knightquest:bamboo_blue_helmet",
         "knightquest:bamboo_blue_chestplate",
         "knightquest:bamboo_blue_leggings",
@@ -142,7 +143,7 @@ def main():
         "knightquest:skulk2_helmet",
         "knightquest:skulk3_helmet",
         "knightquest:skulk4_helmet"
-    ]
+    """
 
     finalOutput, changeArmorFunction = [], []
 
@@ -161,7 +162,7 @@ def main():
         elif 'boots' in itemList[i]: armorSlot, uuid = 'feet', '845db27c-c624-495f-8c9f-6020a9a58b6b'
 
         finalOutput.append(f'item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:{itemList[i]}>, {armorValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);\nitem.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:{itemList[i]}>, {kbResValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);\nitem.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:{itemList[i]}>, {armorToughnessValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);')
-        changeArmorFunction.append(f'changeArmor(<item:knightquest:apple_helmet>, {armorValue}, {armorToughnessValue}, {kbResValue});')
+        changeArmorFunction.append(f'changeArmor(<item:{itemList[i]}>, {armorValue}, {armorToughnessValue}, {kbResValue});')
 
 
     for i in range(len(finalOutput)): print(finalOutput[i])
@@ -172,18 +173,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
-
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
-
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
-
-
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:{itemList[i]}>, {armorValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
-
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:{itemList[i]}>, {kbResValue}, <constant:minecraft:attribute/
-    operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
-
-    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:{itemList[i]}>, {armorToughnessValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);
