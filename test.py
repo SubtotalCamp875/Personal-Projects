@@ -161,7 +161,7 @@ def main():
         elif 'leggings' in itemList[i]: armorSlot, uuid = 'legs', 'd8499b04-0e66-4726-ab29-64469d734e0d'
         elif 'boots' in itemList[i]: armorSlot, uuid = 'feet', '845db27c-c624-495f-8c9f-6020a9a58b6b'
 
-        changeArmorFunction.append(f'changeArmor(<item:{itemList[i]}>, {armorValue}, {armorToughnessValue}, {kbResValue});')
+        changeArmorFunction.append(f'changeArmor(<{itemList[i]}>, {armorValue}, {armorToughnessValue}, {kbResValue});')
 
     print('function changeArmor(item as IItemStack, armor as double, toughness as double, resistance as double) as void {\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);\n}')
     for i in range(len(changeArmorFunction)): print(changeArmorFunction[i])
