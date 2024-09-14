@@ -3,8 +3,7 @@ def main():
         "knightquest:apple_helmet",
         "knightquest:apple_chestplate",
         "knightquest:apple_leggings",
-        "knightquest:apple_boots"]
-    """
+        "knightquest:apple_boots",
         "knightquest:bamboo_blue_helmet",
         "knightquest:bamboo_blue_chestplate",
         "knightquest:bamboo_blue_leggings",
@@ -143,7 +142,7 @@ def main():
         "knightquest:skulk2_helmet",
         "knightquest:skulk3_helmet",
         "knightquest:skulk4_helmet"
-    """
+    ]
 
     changeArmorFunction = []
 
