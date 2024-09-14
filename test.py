@@ -145,7 +145,7 @@ def main():
         "knightquest:skulk4_helmet"
     """
 
-    finalOutput, changeArmorFunction = ['function changeArmor(item as IItemStack, armor as double, toughness as double, resistance as double) as void {'], []
+    finalOutput, changeArmorFunction = [],[]
 
 
     for i in range(len(itemList)):
@@ -173,3 +173,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+function changeArmor(item as IItemStack, armor as double, toughness as double, resistance as double) as void {
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);
+}
