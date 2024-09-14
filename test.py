@@ -145,7 +145,7 @@ def main():
         "knightquest:skulk4_helmet"
     """
 
-    finalOutput, changeArmorFunction = [], []
+    finalOutput, changeArmorFunction = ['function changeArmor(item as IItemStack, armor as double, toughness as double, resistance as double) as void {'], []
 
 
     for i in range(len(itemList)):
@@ -164,7 +164,7 @@ def main():
         finalOutput.append(f'item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:{itemList[i]}>, {armorValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);\nitem.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:{itemList[i]}>, {kbResValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);\nitem.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:{itemList[i]}>, {armorToughnessValue}, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:{armorSlot}>);')
         changeArmorFunction.append(f'changeArmor(<item:{itemList[i]}>, {armorValue}, {armorToughnessValue}, {kbResValue});')
 
-
+    finalOutput.append('}')
     for i in range(len(finalOutput)): print(finalOutput[i])
     for i in range(len(finalOutput)): print(changeArmorFunction[i])
 
