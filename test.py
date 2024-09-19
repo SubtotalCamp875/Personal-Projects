@@ -12,7 +12,7 @@ def main():
     itemList = [
         "knightquest:bamboo_blue_helmet",
         "knightquest:bamboo_blue_chestplate"]
-        """
+    """
         "knightquest:bamboo_blue_leggings",
         "knightquest:bamboo_blue_boots",
         "knightquest:bamboo_green_helmet",
@@ -181,7 +181,7 @@ def main():
         "rogues:berserker_armor_chest",
         "rogues:berserker_armor_legs",
         "rogues:berserker_armor_feet"
-        """
+    """
 
 
     changeArmorFunction = []
