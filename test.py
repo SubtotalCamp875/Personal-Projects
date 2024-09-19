@@ -178,7 +178,7 @@ def main():
         "rogues:berserker_armor_feet"
     ]
 
-
+    '''
     changeArmorFunction = []
 
     if len(itemList) > len(numList)/3: raise ValueError('You dont have enough numbers in your list')
@@ -221,8 +221,15 @@ def main():
     print('function changeArmorLegs(item as IItemStack, armor as double, toughness as double, resistance as double) as void {\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:legs>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:legs>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:legs>);\n}')
     print('function changeArmorFeet(item as IItemStack, armor as double, toughness as double, resistance as double) as void {\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:feet>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:feet>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:feet>);\n}\n')
     for i in range(len(changeArmorFunction)): print(changeArmorFunction[i])
-
-
+    '''
+    count = 0
+    for i in range(len(itemList)):
+        print(f"{count}, #armor of {itemList[i].replace('knightquest:','')}')
+        count += 1
+        print(f'{count}, #kb res of {itemList[i].replace('knightquest:','')}')
+        count += 1
+        print(f'{count}, #toughness of {itemList[i].replace('knightquest:','')}')
+        count += 1
 
 
 if __name__ == '__main__':
