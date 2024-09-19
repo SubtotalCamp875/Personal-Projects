@@ -1,11 +1,18 @@
 def main():
+    numIndex = 0
+    numList = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ]
+
     itemList = [
-        "knightquest:apple_helmet",
-        "knightquest:apple_chestplate",
-        "knightquest:apple_leggings",
-        "knightquest:apple_boots",
         "knightquest:bamboo_blue_helmet",
-        "knightquest:bamboo_blue_chestplate",
+        "knightquest:bamboo_blue_chestplate"]
+        """
         "knightquest:bamboo_blue_leggings",
         "knightquest:bamboo_blue_boots",
         "knightquest:bamboo_green_helmet",
@@ -71,10 +78,6 @@ def main():
         "knightquest:sea_chestplate",
         "knightquest:sea_leggings",
         "knightquest:sea_boots",
-        "knightquest:shield_helmet",
-        "knightquest:shield_chestplate",
-        "knightquest:shield_leggings",
-        "knightquest:shield_boots",
         "knightquest:silver_helmet",
         "knightquest:silver_chestplate",
         "knightquest:silver_leggings",
@@ -130,10 +133,6 @@ def main():
         "knightquest:witch_chestplate",
         "knightquest:witch_leggings",
         "knightquest:witch_boots",
-        "knightquest:polar_helmet",
-        "knightquest:polar_chestplate",
-        "knightquest:polar_leggings",
-        "knightquest:polar_boots",
         "knightquest:shinobi_helmet",
         "knightquest:shinobi_chestplate",
         "knightquest:shinobi_leggings",
@@ -141,26 +140,85 @@ def main():
         "knightquest:skulk_helmet",
         "knightquest:skulk2_helmet",
         "knightquest:skulk3_helmet",
-        "knightquest:skulk4_helmet"
-    ]
+        "knightquest:skulk4_helmet",
+        "archers:archer_armor_head",
+        "archers:archer_armor_chest",
+        "archers:archer_armor_legs",
+        "archers:archer_armor_feet",
+        "rogues:rogue_armor_head",
+        "rogues:rogue_armor_chest",
+        "rogues:rogue_armor_legs",
+        "rogues:rogue_armor_feet",
+        "paladins:priest_robe_head",
+        "paladins:priest_robe_chest",
+        "paladins:priest_robe_legs",
+        "paladins:priest_robe_feet",
+        "paladins:prior_robe_head",
+        "paladins:prior_robe_chest",
+        "paladins:prior_robe_legs",
+        "paladins:prior_robe_feet",
+        "paladins:paladin_armor_head",
+        "paladins:paladin_armor_chest",
+        "paladins:paladin_armor_legs",
+        "paladins:paladin_armor_feet",
+        "paladins:crusader_armor_head",
+        "paladins:crusader_armor_chest",
+        "paladins:crusader_armor_legs",
+        "paladins:crusader_armor_feet",
+        "rogues:assassin_armor_head",
+        "rogues:assassin_armor_chest",
+        "rogues:assassin_armor_legs",
+        "rogues:assassin_armor_feet",
+        "archers:ranger_armor_head",
+        "archers:ranger_armor_chest",
+        "archers:ranger_armor_legs",
+        "archers:ranger_armor_feet",
+        "rogues:warrior_armor_head",
+        "rogues:warrior_armor_chest",
+        "rogues:warrior_armor_legs",
+        "rogues:warrior_armor_feet",
+        "rogues:berserker_armor_head",
+        "rogues:berserker_armor_chest",
+        "rogues:berserker_armor_legs",
+        "rogues:berserker_armor_feet"
+        """
+
 
     changeArmorFunction = []
 
+    if len(itemList) > len(numList)/3: raise ValueError('You dont have enough numbers in your list')
+    elif len(itemList) < len(numList)/3: raise ValueError('You have too many numbers in your list')
 
     for i in range(len(itemList)):
 
+        """
         armorValue, kbResValue, armorToughnessValue = '', '', ''
         armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
         kbResValue = input(f'Set a generic kb resistance value for {itemList[i]}: ')
         armorToughnessValue = input(f'Set a generic toughness value for {itemList[i]}: ')
         print('\n')
+        """
+
+        armorValue = numList[numIndex]
+        numIndex += 1
+        kbResValue = numList[numIndex]
+        numIndex += 1
+        armorToughnessValue = numList[numIndex]
+        numIndex += 1
+        print(f'armor of {itemList[i]} = {armorValue}')
+        print(f'Kb Res of {itemList[i]} = {kbResValue}')
+        print(f'Toughness of {itemList[i]} = {armorToughnessValue}')
+
+
 
         if 'helmet' in itemList[i]: function = 'changeArmorHead'
         elif 'chestplate' in itemList[i]: function = 'changeArmorChest'
         elif 'leggings' in itemList[i]: function = 'changeArmorLegs'
         elif 'boots' in itemList[i]: function = 'changeArmorFeet'
 
+
         changeArmorFunction.append(f'{function}(<item:{itemList[i]}>, {armorValue}, {armorToughnessValue}, {kbResValue});')
+
 
     print('function changeArmorHead(item as IItemStack, armor as double, toughness as double, resistance as double) as void {\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:head>);\n}')
     print('function changeArmorChest(item as IItemStack, armor as double, toughness as double, resistance as double) as void {\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:chest>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:chest>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:chest>);\n}')
