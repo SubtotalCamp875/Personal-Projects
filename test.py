@@ -201,13 +201,14 @@ def main():
 
         armorValue = numList[numIndex]
         numIndex += 1
-        kbResValue = numList[numIndex]
-        numIndex += 1
         armorToughnessValue = numList[numIndex]
         numIndex += 1
+        kbResValue = numList[numIndex]
+        numIndex += 1
+
         print(f'armor of {itemList[i]} = {armorValue}')
-        print(f'Kb Res of {itemList[i]} = {kbResValue}')
         print(f'Toughness of {itemList[i]} = {armorToughnessValue}')
+        print(f'Kb Res of {itemList[i]} = {kbResValue}')
 
 
 
