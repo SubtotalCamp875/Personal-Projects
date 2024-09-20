@@ -724,7 +724,7 @@ def main():
 	    "minecraft:diamond_helmet",
 	    "minecraft:diamond_chestplate",
 	    "minecraft:diamond_leggings",
-	    "minecraft:diamond_boots"
+	    "minecraft:diamond_boots",
         "minecraft:iron_helmet",
 	    "minecraft:iron_chestplate",
 	    "minecraft:iron_leggings",
