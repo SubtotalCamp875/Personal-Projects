@@ -775,7 +775,6 @@ def main():
     print('function changeArmorFeet(item as IItemStack, armor as double, toughness as double, resistance as double) as void {\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor>, AttributeModifier.create(<resource:minecraft:armor.helmet>, armor, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:feet>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.knockback_resistance>, AttributeModifier.create(<resource:minecraft:armor.helmet>, resistance, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:feet>);\n    item.definition.addAttributeModifier(<attribute:minecraft:generic.armor_toughness>, AttributeModifier.create(<resource:minecraft:armor.helmet>, toughness, <constant:minecraft:attribute/operation:add_value>), <constant:minecraft:equipmentslot/group:feet>);\n}\n')
     for i in range(len(changeArmorFunction)): print(changeArmorFunction[i])
 
-    '''
     count = 0
     for i in range(len(itemList)):
         print(f"{count}, #{itemList[i]} == armor")
@@ -784,7 +783,6 @@ def main():
         count += 1
         print(f"{count}, #{itemList[i]} == kb res")
         count += 1
-    '''
 
 
 if __name__ == '__main__':
