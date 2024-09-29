@@ -896,5 +896,7 @@ linkList = [
     https://modrinth.com/mod/distanthorizons/versions
     https://modrinth.com/mod/bobby/versions?c=release
     https://modrinth.com/plugin/chunky/versions
+    https://modrinth.com/mod/hold-that-chunk/versions
+    https://modrinth.com/mod/c2me-fabric/versions
 
 ]
