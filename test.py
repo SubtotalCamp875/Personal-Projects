@@ -1005,4 +1005,4 @@ linkList = [
 ]
 
 for i in range(len(nameList)):
-    print(f'({nameList[i]})[{linkList[i]}]')
+    print(f'[{nameList[i]}]({linkList[i]})')
