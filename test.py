@@ -967,6 +967,10 @@ https://modrinth.com/mod/emi/versions
 https://modrinth.com/mod/enchantment-descriptions/versions
 https://modrinth.com/mod/controlling/versions
 https://modrinth.com/mod/inventory-profiles-next/versions
-
+https://modrinth.com/mod/mouse-tweaks/versions
+https://modrinth.com/mod/chat-heads/versions
+https://modrinth.com/mod/morechathistory/versions
+https://modrinth.com/mod/better-mount-hud/versions
+https://modrinth.com/mod/controlify/versions
 
 ]
