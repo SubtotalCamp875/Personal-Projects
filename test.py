@@ -1,3 +1,4 @@
+"""
 def main():
     numIndex = 0
     numList = [
@@ -739,13 +740,13 @@ def main():
 
     for i in range(len(itemList)):
 
-        """
-        armorValue, kbResValue, armorToughnessValue = '', '', ''
-        armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
-        kbResValue = input(f'Set a generic kb resistance value for {itemList[i]}: ')
-        armorToughnessValue = input(f'Set a generic toughness value for {itemList[i]}: ')
-        print('\n')
-        """
+
+        #armorValue, kbResValue, armorToughnessValue = '', '', ''
+        #armorValue = input(f'Set a generic armor value for {itemList[i]}: ')
+        #kbResValue = input(f'Set a generic kb resistance value for {itemList[i]}: ')
+        #armorToughnessValue = input(f'Set a generic toughness value for {itemList[i]}: ')
+        #print('\n')
+
 
         armorValue = numList[numIndex]
         numIndex += 1
@@ -787,3 +788,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+"""
+
+nameList = [
+    
+]
