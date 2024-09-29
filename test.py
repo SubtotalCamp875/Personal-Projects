@@ -939,7 +939,6 @@ linkList = [
     'https://modrinth.com/mod/fabricskyboxes/versions',
     'https://modrinth.com/mod/ambientsounds/versions',
     'https://modrinth.com/mod/visuality/versions',
-    'https://modrinth.com/mod/essential/versions',
     'https://modrinth.com/mod/essential/versions?g=1.21.1',
     'https://modrinth.com/mod/capes/versions',
     'https://modrinth.com/mod/wavey-capes/versions',
