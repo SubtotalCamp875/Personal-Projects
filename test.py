@@ -957,5 +957,9 @@ https://modrinth.com/mod/item-borders/versions
 https://modrinth.com/mod/better-clouds/versions
 https://modrinth.com/mod/chunks-fade-in/versions
 https://modrinth.com/mod/tooltipfix/versions
+https://modrinth.com/mod/talkbubbles/versions
+https://modrinth.com/mod/voicechat-soundboard/versions
+https://modrinth.com/mod/waterplayer/versions
+https://modrinth.com/mod/jei/versions
 
 ]
