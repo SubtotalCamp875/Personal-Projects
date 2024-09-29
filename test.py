@@ -801,6 +801,7 @@ Puzzles Lib
 AlinLib
 bad packets
 Iceberg
+Prism
 ]
 
 linkList = [
@@ -814,6 +815,7 @@ https://modrinth.com/mod/puzzles-lib/versions
 https://modrinth.com/mod/alinlib/versions
 https://modrinth.com/mod/badpackets/versions
 https://modrinth.com/mod/iceberg/versions
+https://modrinth.com/mod/prism-lib/versions
 
 ]
 
