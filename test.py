@@ -895,5 +895,6 @@ linkList = [
     https://modrinth.com/mod/antique-atlas-4/versions
     https://modrinth.com/mod/distanthorizons/versions
     https://modrinth.com/mod/bobby/versions?c=release
+    https://modrinth.com/plugin/chunky/versions
 
 ]
