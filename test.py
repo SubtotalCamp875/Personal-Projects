@@ -792,12 +792,26 @@ if __name__ == '__main__':
 
 nameList = [
     'Compatibility Mods',
-
+YetAnotherConfigLib
+Fabric Language Kotlin
+Bookshelf
+Prickle
+libIPN
+Puzzles Lib
+AlinLib
+bad packets
 ]
 
 linkList = [
     '',
-    
+https://modrinth.com/mod/yacl/versions
+https://modrinth.com/mod/fabric-language-kotlin/versions
+https://modrinth.com/mod/bookshelf-lib/versions
+https://modrinth.com/mod/prickle/versions
+https://modrinth.com/mod/libipn
+https://modrinth.com/mod/puzzles-lib/versions
+https://modrinth.com/mod/alinlib/versions
+https://modrinth.com/mod/badpackets/versions
 
 ]
 
