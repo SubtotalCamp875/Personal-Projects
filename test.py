@@ -944,5 +944,7 @@ https://modrinth.com/mod/make_bubbles_pop/versions
 https://modrinth.com/mod/cave-dust/versions
 https://modrinth.com/mod/blur-plus/versions
 https://modrinth.com/mod/advancement-plaques/versions
+https://modrinth.com/mod/show-me-your-skin/versions
+https://modrinth.com/mod/legendary-tooltips/versions
 
 ]
