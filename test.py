@@ -888,6 +888,14 @@ nameList = [
     'Shoulder Surfing Reloaded',
     'Accurate Block Placement Reborn',
 
+    'Added:',
+    'SnowyLeavesPlus',
+    'Inventory HUD+',
+    'Custom Crosshair Mod',
+    'Reacharound',
+    'No Fog',
+    'GammaUtils+',
+    'Screenshot to Clipboard',
 ]
 
 linkList = [
@@ -985,5 +993,7 @@ https://modrinth.com/mod/enhanced-attack-indicator/versions
 https://modrinth.com/mod/pick-up-notifier/versions
 https://modrinth.com/mod/shoulder-surfing-reloaded/versions
 https://modrinth.com/mod/accurate-block-placement-reborn/versions
+'',
+https://modrinth.com/mod/snowyleavesplus/versions
 
 ]
