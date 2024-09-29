@@ -934,5 +934,10 @@ https://modrinth.com/mod/visuality/versions
 https://modrinth.com/mod/essential/versions
 https://modrinth.com/mod/essential/versions?g=1.21.1
 https://modrinth.com/mod/capes/versions
+https://modrinth.com/mod/wavey-capes/versions
+https://modrinth.com/mod/eating-animation/versions
+https://modrinth.com/mod/dynamiccrosshair/versions
+https://modrinth.com/mod/cherished-worlds/versions
+https://modrinth.com/mod/item-highlighter/versions
 
 ]
