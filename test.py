@@ -800,6 +800,7 @@ libIPN
 Puzzles Lib
 AlinLib
 bad packets
+Iceberg
 ]
 
 linkList = [
@@ -812,6 +813,7 @@ https://modrinth.com/mod/libipn
 https://modrinth.com/mod/puzzles-lib/versions
 https://modrinth.com/mod/alinlib/versions
 https://modrinth.com/mod/badpackets/versions
+https://modrinth.com/mod/iceberg/versions
 
 ]
 
