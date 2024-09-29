@@ -923,5 +923,9 @@ https://modrinth.com/mod/fps-reducer/versions
 https://modrinth.com/mod/entity-model-features/versions
 https://modrinth.com/mod/entitytexturefeatures/versions
 https://modrinth.com/mod/not-enough-animations/versions
+https://modrinth.com/mod/continuity/versions
+https://modrinth.com/mod/3dskinlayers/versions
+https://modrinth.com/mod/sound-physics-remastered/versions
+https://modrinth.com/mod/presence-footsteps/versions
 
 ]
