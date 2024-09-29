@@ -946,5 +946,9 @@ https://modrinth.com/mod/blur-plus/versions
 https://modrinth.com/mod/advancement-plaques/versions
 https://modrinth.com/mod/show-me-your-skin/versions
 https://modrinth.com/mod/legendary-tooltips/versions
+https://modrinth.com/mod/first-person-model/versions
+https://modrinth.com/mod/wakes/versions
+https://modrinth.com/mod/resourcify/versions
+https://modrinth.com/mod/detail-armor-bar/versions
 
 ]
