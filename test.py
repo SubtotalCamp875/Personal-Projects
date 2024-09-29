@@ -909,5 +909,8 @@ linkList = [
     https://modrinth.com/mod/entityculling/versions
     https://modrinth.com/mod/modernfix/versions
     https://modrinth.com/mod/dynamic-fps/versions
+https://modrinth.com/mod/memoryleakfix/versions
+https://modrinth.com/mod/moreculling/versions
+https://modrinth.com/mod/krypton/versions
 
 ]
