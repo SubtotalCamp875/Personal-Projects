@@ -907,5 +907,7 @@ linkList = [
     https://modrinth.com/mod/ferrite-core/versions
     https://modrinth.com/mod/lithium/versions
     https://modrinth.com/mod/entityculling/versions
-    
+    https://modrinth.com/mod/modernfix/versions
+    https://modrinth.com/mod/dynamic-fps/versions
+
 ]
