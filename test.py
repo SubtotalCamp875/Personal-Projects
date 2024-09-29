@@ -898,5 +898,14 @@ linkList = [
     https://modrinth.com/plugin/chunky/versions
     https://modrinth.com/mod/hold-that-chunk/versions
     https://modrinth.com/mod/c2me-fabric/versions
-
+    https://modrinth.com/mod/nvidium/versions
+    https://modrinth.com/mod/ambient-environment/versions
+    '',
+    https://modrinth.com/mod/sodium/versions
+    https://modrinth.com/mod/indium/versions
+    https://modrinth.com/mod/iris/versions
+    https://modrinth.com/mod/ferrite-core/versions
+    https://modrinth.com/mod/lithium/versions
+    https://modrinth.com/mod/entityculling/versions
+    
 ]
