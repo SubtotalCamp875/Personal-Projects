@@ -920,7 +920,7 @@ https://modrinth.com/mod/cull-leaves/versions
 https://modrinth.com/mod/auth-me/versions
 https://modrinth.com/mod/fps-reducer/versions
 '',
-
-
+https://modrinth.com/mod/entity-model-features/versions
+https://modrinth.com/mod/entitytexturefeatures/versions
 
 ]
