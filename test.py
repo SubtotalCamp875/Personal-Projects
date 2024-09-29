@@ -942,5 +942,7 @@ https://modrinth.com/mod/item-highlighter/versions
 https://modrinth.com/mod/physicsmod/versions
 https://modrinth.com/mod/make_bubbles_pop/versions
 https://modrinth.com/mod/cave-dust/versions
+https://modrinth.com/mod/blur-plus/versions
+https://modrinth.com/mod/advancement-plaques/versions
 
 ]
