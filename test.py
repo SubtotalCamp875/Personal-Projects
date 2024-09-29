@@ -995,5 +995,7 @@ https://modrinth.com/mod/shoulder-surfing-reloaded/versions
 https://modrinth.com/mod/accurate-block-placement-reborn/versions
 '',
 https://modrinth.com/mod/snowyleavesplus/versions
+https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge/files/all?page=1&pageSize=20
+https://modrinth.com/mod/custom-crosshair-mod/versions
 
 ]
