@@ -950,5 +950,12 @@ https://modrinth.com/mod/first-person-model/versions
 https://modrinth.com/mod/wakes/versions
 https://modrinth.com/mod/resourcify/versions
 https://modrinth.com/mod/detail-armor-bar/versions
+https://modrinth.com/mod/weaponmaster/versions
+https://modrinth.com/mod/explosive-enhancement/versions
+https://modrinth.com/mod/status-effect-bars/versions
+https://modrinth.com/mod/item-borders/versions
+https://modrinth.com/mod/better-clouds/versions
+https://modrinth.com/mod/chunks-fade-in/versions
+https://modrinth.com/mod/tooltipfix/versions
 
 ]
