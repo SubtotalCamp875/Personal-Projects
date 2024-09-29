@@ -961,5 +961,6 @@ https://modrinth.com/mod/talkbubbles/versions
 https://modrinth.com/mod/voicechat-soundboard/versions
 https://modrinth.com/mod/waterplayer/versions
 https://modrinth.com/mod/jei/versions
-
+https://modrinth.com/mod/rei/versions
+https://modrinth.com/mod/emi/versions
 ]
