@@ -900,104 +900,109 @@ nameList = [
 
 linkList = [
     '',
-    https://modrinth.com/mod/antique-atlas-4/versions
-    https://modrinth.com/mod/distanthorizons/versions
-    https://modrinth.com/mod/bobby/versions?c=release
-    https://modrinth.com/plugin/chunky/versions
-    https://modrinth.com/mod/hold-that-chunk/versions
-    https://modrinth.com/mod/c2me-fabric/versions
-    https://modrinth.com/mod/nvidium/versions
-    https://modrinth.com/mod/ambient-environment/versions
+    'https://modrinth.com/mod/antique-atlas-4/versions',
+    'https://modrinth.com/mod/distanthorizons/versions',
+    'https://modrinth.com/mod/bobby/versions?c=release',
+    'https://modrinth.com/plugin/chunky/versions',
+    'https://modrinth.com/mod/hold-that-chunk/versions',
+    'https://modrinth.com/mod/c2me-fabric/versions',
+    'https://modrinth.com/mod/nvidium/versions',
+    'https://modrinth.com/mod/ambient-environment/versions',
     '',
-    https://modrinth.com/mod/sodium/versions
-    https://modrinth.com/mod/indium/versions
-    https://modrinth.com/mod/iris/versions
-    https://modrinth.com/mod/ferrite-core/versions
-    https://modrinth.com/mod/lithium/versions
-    https://modrinth.com/mod/entityculling/versions
-    https://modrinth.com/mod/modernfix/versions
-    https://modrinth.com/mod/dynamic-fps/versions
-https://modrinth.com/mod/memoryleakfix/versions
-https://modrinth.com/mod/moreculling/versions
-https://modrinth.com/mod/krypton/versions
-https://modrinth.com/mod/ebe/versions
-https://modrinth.com/mod/vmp-fabric/versions
-https://modrinth.com/mod/badoptimizations/versions
-https://modrinth.com/mod/reeses-sodium-options/versions
-https://modrinth.com/mod/cull-leaves/versions
-https://modrinth.com/mod/auth-me/versions
-https://modrinth.com/mod/fps-reducer/versions
-'',
-https://modrinth.com/mod/entity-model-features/versions
-https://modrinth.com/mod/entitytexturefeatures/versions
-https://modrinth.com/mod/not-enough-animations/versions
-https://modrinth.com/mod/continuity/versions
-https://modrinth.com/mod/3dskinlayers/versions
-https://modrinth.com/mod/sound-physics-remastered/versions
-https://modrinth.com/mod/presence-footsteps/versions
-https://modrinth.com/mod/fallingleaves/versions
-https://modrinth.com/mod/fabricskyboxes/versions
-https://modrinth.com/mod/ambientsounds/versions
-https://modrinth.com/mod/visuality/versions
-https://modrinth.com/mod/essential/versions
-https://modrinth.com/mod/essential/versions?g=1.21.1
-https://modrinth.com/mod/capes/versions
-https://modrinth.com/mod/wavey-capes/versions
-https://modrinth.com/mod/eating-animation/versions
-https://modrinth.com/mod/dynamiccrosshair/versions
-https://modrinth.com/mod/cherished-worlds/versions
-https://modrinth.com/mod/item-highlighter/versions
-https://modrinth.com/mod/physicsmod/versions
-https://modrinth.com/mod/make_bubbles_pop/versions
-https://modrinth.com/mod/cave-dust/versions
-https://modrinth.com/mod/blur-plus/versions
-https://modrinth.com/mod/advancement-plaques/versions
-https://modrinth.com/mod/show-me-your-skin/versions
-https://modrinth.com/mod/legendary-tooltips/versions
-https://modrinth.com/mod/first-person-model/versions
-https://modrinth.com/mod/wakes/versions
-https://modrinth.com/mod/resourcify/versions
-https://modrinth.com/mod/detail-armor-bar/versions
-https://modrinth.com/mod/weaponmaster/versions
-https://modrinth.com/mod/explosive-enhancement/versions
-https://modrinth.com/mod/status-effect-bars/versions
-https://modrinth.com/mod/item-borders/versions
-https://modrinth.com/mod/better-clouds/versions
-https://modrinth.com/mod/chunks-fade-in/versions
-https://modrinth.com/mod/tooltipfix/versions
-https://modrinth.com/mod/talkbubbles/versions
-https://modrinth.com/mod/voicechat-soundboard/versions
-https://modrinth.com/mod/waterplayer/versions
-https://modrinth.com/mod/jei/versions
-https://modrinth.com/mod/rei/versions
-https://modrinth.com/mod/emi/versions
-'',
-https://modrinth.com/mod/enchantment-descriptions/versions
-https://modrinth.com/mod/controlling/versions
-https://modrinth.com/mod/inventory-profiles-next/versions
-https://modrinth.com/mod/mouse-tweaks/versions
-https://modrinth.com/mod/chat-heads/versions
-https://modrinth.com/mod/morechathistory/versions
-https://modrinth.com/mod/better-mount-hud/versions
-https://modrinth.com/mod/controlify/versions
-https://modrinth.com/mod/better-third-person/versions
-https://modrinth.com/mod/better-ping-display-fabric/versions
-https://modrinth.com/mod/invmove/versions
-https://modrinth.com/mod/jade/versions
-https://modrinth.com/mod/wthit/versions
-https://modrinth.com/mod/craftify/versions
-https://modrinth.com/mod/highlight/versions
-https://modrinth.com/mod/cubes-without-borders/versions
-https://modrinth.com/mod/midnightcontrols/versions
-https://modrinth.com/mod/enhanced-attack-indicator/versions
-https://modrinth.com/mod/pick-up-notifier/versions
-https://modrinth.com/mod/shoulder-surfing-reloaded/versions
-https://modrinth.com/mod/accurate-block-placement-reborn/versions
-'',
-https://modrinth.com/mod/snowyleavesplus/versions
-https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge/files/all?page=1&pageSize=20
-https://modrinth.com/mod/custom-crosshair-mod/versions
-https://modrinth.com/mod/reacharound/versions
-https://modrinth.com/mod/no_fog/versions
+    'https://modrinth.com/mod/sodium/versions',
+    'https://modrinth.com/mod/indium/versions',
+    'https://modrinth.com/mod/iris/versions',
+    'https://modrinth.com/mod/ferrite-core/versions',
+    'https://modrinth.com/mod/lithium/versions',
+    'https://modrinth.com/mod/entityculling/versions',
+    'https://modrinth.com/mod/modernfix/versions',
+    'https://modrinth.com/mod/dynamic-fps/versions',
+    'https://modrinth.com/mod/memoryleakfix/versions',
+    'https://modrinth.com/mod/moreculling/versions',
+    'https://modrinth.com/mod/krypton/versions',
+    'https://modrinth.com/mod/ebe/versions',
+    'https://modrinth.com/mod/vmp-fabric/versions',
+    'https://modrinth.com/mod/badoptimizations/versions',
+    'https://modrinth.com/mod/reeses-sodium-options/versions',
+    'https://modrinth.com/mod/cull-leaves/versions',
+    'https://modrinth.com/mod/auth-me/versions',
+    'https://modrinth.com/mod/fps-reducer/versions',
+    '',
+    'https://modrinth.com/mod/entity-model-features/versions',
+    'https://modrinth.com/mod/entitytexturefeatures/versions',
+    'https://modrinth.com/mod/not-enough-animations/versions',
+    'https://modrinth.com/mod/continuity/versions',
+    'https://modrinth.com/mod/3dskinlayers/versions',
+    'https://modrinth.com/mod/sound-physics-remastered/versions',
+    'https://modrinth.com/mod/presence-footsteps/versions',
+    'https://modrinth.com/mod/fallingleaves/versions',
+    'https://modrinth.com/mod/fabricskyboxes/versions',
+    'https://modrinth.com/mod/ambientsounds/versions',
+    'https://modrinth.com/mod/visuality/versions',
+    'https://modrinth.com/mod/essential/versions',
+    'https://modrinth.com/mod/essential/versions?g=1.21.1',
+    'https://modrinth.com/mod/capes/versions',
+    'https://modrinth.com/mod/wavey-capes/versions',
+    'https://modrinth.com/mod/eating-animation/versions',
+    'https://modrinth.com/mod/dynamiccrosshair/versions',
+    'https://modrinth.com/mod/cherished-worlds/versions',
+    'https://modrinth.com/mod/item-highlighter/versions',
+    'https://modrinth.com/mod/physicsmod/versions',
+    'https://modrinth.com/mod/make_bubbles_pop/versions',
+    'https://modrinth.com/mod/cave-dust/versions',
+    'https://modrinth.com/mod/blur-plus/versions',
+    'https://modrinth.com/mod/advancement-plaques/versions',
+    'https://modrinth.com/mod/show-me-your-skin/versions',
+    'https://modrinth.com/mod/legendary-tooltips/versions',
+    'https://modrinth.com/mod/first-person-model/versions',
+    'https://modrinth.com/mod/wakes/versions',
+    'https://modrinth.com/mod/resourcify/versions',
+    'https://modrinth.com/mod/detail-armor-bar/versions',
+    'https://modrinth.com/mod/weaponmaster/versions',
+    'https://modrinth.com/mod/explosive-enhancement/versions',
+    'https://modrinth.com/mod/status-effect-bars/versions',
+    'https://modrinth.com/mod/item-borders/versions',
+    'https://modrinth.com/mod/better-clouds/versions',
+    'https://modrinth.com/mod/chunks-fade-in/versions',
+    'https://modrinth.com/mod/tooltipfix/versions',
+    'https://modrinth.com/mod/talkbubbles/versions',
+    'https://modrinth.com/mod/voicechat-soundboard/versions',
+    'https://modrinth.com/mod/waterplayer/versions',
+    'https://modrinth.com/mod/jei/versions',
+    'https://modrinth.com/mod/rei/versions',
+    'https://modrinth.com/mod/emi/versions',
+    '',
+    'https://modrinth.com/mod/enchantment-descriptions/versions',
+    'https://modrinth.com/mod/controlling/versions',
+    'https://modrinth.com/mod/inventory-profiles-next/versions',
+    'https://modrinth.com/mod/mouse-tweaks/versions',
+    'https://modrinth.com/mod/chat-heads/versions',
+    'https://modrinth.com/mod/morechathistory/versions',
+    'https://modrinth.com/mod/better-mount-hud/versions',
+    'https://modrinth.com/mod/controlify/versions',
+    'https://modrinth.com/mod/better-third-person/versions',
+    'https://modrinth.com/mod/better-ping-display-fabric/versions',
+    'https://modrinth.com/mod/invmove/versions',
+    'https://modrinth.com/mod/jade/versions',
+    'https://modrinth.com/mod/wthit/versions',
+    'https://modrinth.com/mod/craftify/versions',
+    'https://modrinth.com/mod/highlight/versions',
+    'https://modrinth.com/mod/cubes-without-borders/versions',
+    'https://modrinth.com/mod/midnightcontrols/versions',
+    'https://modrinth.com/mod/enhanced-attack-indicator/versions',
+    'https://modrinth.com/mod/pick-up-notifier/versions',
+    'https://modrinth.com/mod/shoulder-surfing-reloaded/versions',
+    'https://modrinth.com/mod/accurate-block-placement-reborn/versions',
+    '',
+    'https://modrinth.com/mod/snowyleavesplus/versions',
+    'https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge/files/all?page=1&pageSize=20',
+    'https://modrinth.com/mod/custom-crosshair-mod/versions',
+    'https://modrinth.com/mod/reacharound/versions',
+    'https://modrinth.com/mod/no_fog/versions',
+    'https://modrinth.com/mod/gamma-utils/versions',
+    'https://modrinth.com/mod/screenshot-to-clipboard/versions',
 
 ]
+
+for i in range(len(nameList)):
+    print(f'({nameList[i]})[{linkList[i]}]')
