@@ -981,5 +981,9 @@ https://modrinth.com/mod/craftify/versions
 https://modrinth.com/mod/highlight/versions
 https://modrinth.com/mod/cubes-without-borders/versions
 https://modrinth.com/mod/midnightcontrols/versions
+https://modrinth.com/mod/enhanced-attack-indicator/versions
+https://modrinth.com/mod/pick-up-notifier/versions
+https://modrinth.com/mod/shoulder-surfing-reloaded/versions
+https://modrinth.com/mod/accurate-block-placement-reborn/versions
 
 ]
