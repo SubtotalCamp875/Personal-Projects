@@ -927,5 +927,8 @@ https://modrinth.com/mod/continuity/versions
 https://modrinth.com/mod/3dskinlayers/versions
 https://modrinth.com/mod/sound-physics-remastered/versions
 https://modrinth.com/mod/presence-footsteps/versions
+https://modrinth.com/mod/fallingleaves/versions
+https://modrinth.com/mod/fabricskyboxes/versions
+https://modrinth.com/mod/ambientsounds/versions
 
 ]
