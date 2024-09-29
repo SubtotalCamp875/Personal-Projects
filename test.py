@@ -791,5 +791,101 @@ if __name__ == '__main__':
 """
 
 nameList = [
-    
+    Exploration Mods
+    Antique Atlas 4
+    Distant Horizons
+    Bobby
+    Chunky
+    Hold That Chunk
+    Concurrent Chunk Management Engine
+    Nvidium
+    Ambient Environment
+
+    Optimization Mods
+    Sodium
+    Indium
+    Iris Shaders (please note: shaders will prevent ship cannons from appearing!)
+    Ferrite Core
+    Lithium
+    Entity Culling
+    Modern Fix
+    Dynamic FPS
+    Memory Leak Fix
+    More Culling
+    Krypton
+    Enhanced Block Entities (please note: this breaks Decorated Pots shaking animation!)
+    Very Many Players
+    BadOptimizations
+    Reese's Sodium Options
+    CullLeaves
+    AuthMe
+    FPS Reducer
+
+    Customization Mods
+    Entity Model Features [EMF]
+    Entity Texture Features [ETF]
+    Not Enough Animations
+    Continuity
+    3D Skin Layers
+    Sound Physics Remastered
+    Presence Footsteps
+    Falling Leaves
+    FabricSkyboxes
+    AmbientSounds
+    Visuality
+    Essentials Mod
+    Capes
+    Wavey Capes
+    Eating Animation
+    Dynamic Crosshair
+    Cherished Worlds
+    Item Highlighter
+    Physics Mod
+    Make Bubbles Pop
+    Cave Dust
+    Blur+
+    Advancement Plaques
+    Show Me Your Skin!
+    Legendary Tooltips
+    First-person Model
+    Wakes
+    Resourcify
+    Detail Armor Bar (please note: this has not been tested yet and may break some of the new armor!)
+    YDM's Weapon Master
+    Explosive Enhancement
+    Status Effect Bars
+    Item Borders
+    Better Clouds
+    Chunks fade in
+    ToolTipFix
+    TalkBubbles
+    Voice Chat Soundboard
+    WaterPlayer
+    JEI
+    REI
+    EMI (most recommended)
+
+    Helpful Mods
+    Enchantment Descriptions
+    Controlling
+    Inventory Profiles Next
+    Mouse Tweaks
+    Chat Heads
+    More Chat History
+    Better Mount HUD
+    Controlify
+    Better Third Person
+    Better Ping Display [Fabric]
+    InvMove
+    Jade (recommended over WTHIT)
+    WTHIT
+    Craftify
+    Highlight
+    Cubes Without Borders
+    MidnightControls
+    Enhanced Attack Indicator
+    Pick Up Notifier
+    Shoulder Surfing Reloaded
+    Accurate Block Placement Reborn
+
 ]
