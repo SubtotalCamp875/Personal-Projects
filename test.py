@@ -972,5 +972,13 @@ https://modrinth.com/mod/chat-heads/versions
 https://modrinth.com/mod/morechathistory/versions
 https://modrinth.com/mod/better-mount-hud/versions
 https://modrinth.com/mod/controlify/versions
+https://modrinth.com/mod/better-third-person/versions
+https://modrinth.com/mod/better-ping-display-fabric/versions
+https://modrinth.com/mod/invmove/versions
+https://modrinth.com/mod/jade/versions
+https://modrinth.com/mod/wthit/versions
+https://modrinth.com/mod/craftify/versions
+
+
 
 ]
