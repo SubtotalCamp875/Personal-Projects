@@ -978,7 +978,8 @@ https://modrinth.com/mod/invmove/versions
 https://modrinth.com/mod/jade/versions
 https://modrinth.com/mod/wthit/versions
 https://modrinth.com/mod/craftify/versions
-
-
+https://modrinth.com/mod/highlight/versions
+https://modrinth.com/mod/cubes-without-borders/versions
+https://modrinth.com/mod/midnightcontrols/versions
 
 ]
