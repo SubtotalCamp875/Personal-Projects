@@ -939,5 +939,8 @@ https://modrinth.com/mod/eating-animation/versions
 https://modrinth.com/mod/dynamiccrosshair/versions
 https://modrinth.com/mod/cherished-worlds/versions
 https://modrinth.com/mod/item-highlighter/versions
+https://modrinth.com/mod/physicsmod/versions
+https://modrinth.com/mod/make_bubbles_pop/versions
+https://modrinth.com/mod/cave-dust/versions
 
 ]
