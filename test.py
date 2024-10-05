@@ -29,6 +29,7 @@ def main():
                 values[i] = r'\frac{'+f'{"+6.02" * int(values[i])}'+r'}{6.02}'
 
             output += sign+r'g\left(x,\frac{6.02}{6.02+6.02+6.02},'+str(values[i])+r'\right)'
+            print(str(values[i]))
 
         print(f'\n\n{output}')
 
