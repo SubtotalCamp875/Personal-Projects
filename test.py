@@ -15,7 +15,13 @@ def main():
 
         for i in range(len(values)):
             if isEven(i): sign = '+'
-            if values[i]
+            if '.' in values[i]:
+                whole, deci = values[i].split('.')
+                if deci == '25':
+                    deci = 
+                values[i] = r'\frac{'+f'{("+6.02" * int(whole)) + ()}'+r'}{6.02}'
+            else:
+                values[i] = r'\frac{'+f'{"+6.02" * int(values[i])}'+r'}{6.02}'
             else: sign = '-'
             output += sign+r'g\left(x,\frac{6.02}{6.02+6.02+6.02},'+str(values[i])+r'\right)'
             print(i)
