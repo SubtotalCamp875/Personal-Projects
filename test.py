@@ -18,8 +18,8 @@ def main():
             if '.' in values[i]:
                 whole, deci = values[i].split('.')
                 if deci == '25':
-                    deci = 
-                values[i] = r'\frac{'+f'{("+6.02" * int(whole)) + ()}'+r'}{6.02}'
+                    deci =
+                values[i] = r'\frac{' + f'{("+6.02" * int(whole))}' + ()}' + r'}{6.02}'
             else:
                 values[i] = r'\frac{'+f'{"+6.02" * int(values[i])}'+r'}{6.02}'
             else: sign = '-'
