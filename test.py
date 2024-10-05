@@ -24,13 +24,13 @@ def main():
                     deci = r'\frac{6.02}{6.02+6.02}'
                 elif deci == '75':
                     deci = r'\frac{6.02+6.02+6.02}{6.02+6.02+6.02+6.02}'
-                values[i] = r'\frac{' + f'{("+6.02" * int(whole))}+{deci}' + r'}{6.02}'
+                values[i] = r'\frac{' + f'{("+6.02" * int(whole))}' + r'}{6.02}+' + deci
             else:
                 values[i] = r'\frac{'+f'{"+6.02" * int(values[i])}'+r'}{6.02}'
 
             output += sign+r'g\left(x,\frac{6.02}{6.02+6.02+6.02},'+str(values[i])+r'\right)'
 
-        print(output)
+        print(f'\n\n{output}')
 
 
     if mode == '2':
