@@ -39,7 +39,7 @@ def main():
         values = values.split(', ')
         shift = input('shift amount: ')
         for i in range(len(values)):
-            print(f'{(float(values[i])+int(shift)).replace('.0', '')}, ', end='')
+            print(f'{float(values[i]).replace(".0", "")+int(shift)}, ', end='')
 
 
 main()
