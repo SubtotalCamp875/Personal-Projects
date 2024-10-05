@@ -1,6 +1,6 @@
 
 def main():
-    mode = input('1.) build drum\n2.) shift numbers\n')
+    mode = input('1.) build drum\n2.) shift numbers\n~')
     if mode == '1':
         output = r'y_{beat}=-\frac{1}{6.02}'
         equation = 'g\left(x,\frac{6.02}{6.02+6.02+6.02},1\right)'
