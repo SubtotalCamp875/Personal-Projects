@@ -20,7 +20,7 @@ def main():
                 whole, deci = values[i].split('.')
                 if deci == '25':
                     deci = r'\frac{6.02}{6.02+6.02+6.02+6.02}'
-                elif deci == '50':
+                elif deci == '5':
                     deci = r'\frac{6.02}{6.02+6.02}'
                 elif deci == '75':
                     deci = r'\frac{6.02+6.02+6.02}{6.02+6.02+6.02+6.02}'
