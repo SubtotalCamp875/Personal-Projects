@@ -3,7 +3,7 @@ def main():
     mode = input('1.) build drum\n2.) shift numbers\n')
     if mode == '1':
         output = r'y_{beat}=-6.02'
-        equation = 'g\left(x,6.02+6.02+6.02,1\right)'
+        equation = 'g\left(x,6.02+6.02+6.02,\right)'
         values = input('input: ')
         values = values.split(', ')
 
