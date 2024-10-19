@@ -1,6 +1,5 @@
 
-x = r"""
-'\left\{x<2.7,2.8<x\right\}',
+x = [
 '+g\left(x,7,1\right)',
 '+g\left(x,5,1.75\right)',
 '-g\left(x,1,2\right)',
@@ -53,8 +52,10 @@ x = r"""
 '-g\left(x,3,31.25\right)',
 '+g\left(x,7,32.75\right)\left\{x<16.7,16.85<x\right\}',
 '-g\left(x,7,34\right)',
-"""
-l = x.split('\n')
+]
+l = []
+for i in range(len(x)):
+    l.append(x[i].replace(f"g\left(x,", '').replace("\right)", ''))
 
 for i in range(len(l)):
     print(f"'{l[i]}',")
