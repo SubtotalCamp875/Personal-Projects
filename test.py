@@ -336,4 +336,4 @@ rightL = [
 
 
 for i in range(len(x)):
-    print(f"'{x[i][:12]}" + f'{rightR[i]}' + "',")
+    print(f"'{x[i][:12]}" + rf'{rightR[i]}' + "',")
