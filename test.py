@@ -285,4 +285,4 @@ temp2 = [
 ]
 
 for i in range(len(x)):
-    print(x[i][:10] + f'{leftConv[i]},' + temp[i][12:], end = '')
+    print(x[i][:10] + r'\frac{' + f'{leftConv[i]}' + '}{6.02},' + temp[i][12:], end = '')
