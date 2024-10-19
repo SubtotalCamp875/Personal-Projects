@@ -338,5 +338,14 @@ rightL = [
 for i in range(len(rightR)):
     rightL[i] = '+\frac{6.02+6.02+6.02}{6.02+6.02+6.02+6.02}\right)'
 
+    deci = ''
+    if rightL[i] == '25':
+        deci = r'\frac{6.02}{6.02+6.02+6.02+6.02}'
+    elif rightL[i] == '50':
+        deci = r'\frac{6.02}{6.02+6.02}'
+    elif rightL[i] == '75':
+        deci = r'\frac{6.02+6.02+6.02}{6.02+6.02+6.02+6.02}'
+    rightL[i] = r'\frac{' + f'{("+6.02" * int(whole))}' + r'}{6.02}+' + deci
+
 for i in range(len(right)):
     print(f"'{rightL[i]}',")
